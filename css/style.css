@@ -821,7 +821,8 @@ search-box {
 .card-title1 {
     font-size: 2rem; /* Adjust the font size as needed */
     line-height: 1.2; /* Adjust line height for better spacing */
-    margin-bottom: .5rem; /* Adjust bottom margin to reduce space */
+    margin-bottom: .5rem;
+	color: white; /* Adjust bottom margin to reduce space */
 }
 
 
