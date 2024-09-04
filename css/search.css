@@ -1,37 +1,71 @@
-.vertical-divider {
-    border-left: 1px solid #ddd;
-    height: 24px;
-    margin: 0 15px;
-  }
-  
-  .notification-badge {
-    position: absolute;
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+.properties-column {
+    height: 100vh;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+/* Set the height for the map and make it sticky */
+.map-container {
+    height: 100vh;
+    position: sticky;
     top: 0;
-    right: 0;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-  }
-  
-  /* For smaller screens */
-  @media (max-width: 991.98px) {
-    .vertical-divider {
-      display: none;
-    }
-    
-    .navbar-collapse {
-      text-align: center;
-    }
-  
-    .navbar-toggler {
-      margin-left: auto;
-    }
-  
-    .navbar-brand {
-      margin-right: auto;
-    }
-  }
-  
+}
+
+/* Ensure each property card is appropriately sized */
+.property-card {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Hidden by default for non-active pages */
+.property-page {
+    display: none;
+}
+
+/* Active page class */
+.active-page {
+    display: block;
+}
+
+/* Make the cards smaller and more compact */
+.card.property-card {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.pagination {
+    margin-top: 15px;
+}
+
+.search-bar {
+    margin-bottom: 15px;
+}
+
+.search-input {
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
