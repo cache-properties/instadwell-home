@@ -1787,14 +1787,14 @@ body {
 }
 
 .connect-heading {
-	font-size: 1.8rem;
-	font-weight: bold;
+	font-size: 1.6rem;
+	
 }
 
 .connect-subheading {
 	font-size: 1rem;
 	color: #6c757d;
-	margin-bottom: 30px;
+	
 }
 
 .phone-number {
@@ -1809,11 +1809,13 @@ body {
 	align-items: flex-start;
 	flex-wrap: wrap;
 	width: 100%;
-	padding: 30px;
+	margin-bottom: 10px;
 }
 
 .connect-text {
 	flex-basis: 30%;
+	padding-left: 1.5rem;
+
 }
 
 .cards-section {
@@ -1821,10 +1823,10 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-	gap: 15px;
+	gap: 10px;
 }
 
-/* Responsive adjustments */
+/* Mobile adjustments */
 @media (max-width: 768px) {
 	.connect-section {
 		flex-direction: column;
@@ -1833,12 +1835,39 @@ body {
 	.cards-section {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 15px;
+		gap: 1px;
 	}
 
 	.connect-text {
 		margin-bottom: 20px;
-		text-align: center;
+		text-align: center;        
+		align-self: center;
+
+	}
+
+	.contact-card {
+		padding: 10px 15px; /* Reduced padding for smaller cards */
+	}
+
+	.contact-icon {
+		font-size: 24px; /* Reduced icon size */
+		margin-bottom: 10px;
+	}
+
+	.card-title {
+		font-size: 1rem; /* Adjusted card title size */
+	}
+
+	.card-text, .phone-number {
+		font-size: 0.9rem; /* Adjusted text size */
+	}
+
+	.connect-heading {
+		font-size: 1.5rem; /* Smaller heading on mobile */
+	}
+
+	.connect-subheading {
+		font-size: 0.9rem; /* Smaller subheading */
 	}
 }
 
