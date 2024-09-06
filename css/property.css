@@ -1,0 +1,790 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Sticky Heading */
+  .sticky-heading {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Higher than other elements */
+    background-color: white; /* Background color for better visibility */
+    border-bottom: 1px solid #ddd; /* Border for visual separation */
+  }
+
+  .tabs-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #f8f9fa; /* Slightly different background color */
+  }
+
+  .tabs-nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    padding: 10px 15px;
+  }
+
+  .tabs-nav a.active {
+    border-bottom: 2px solid #007bff;
+    color: #0056b3;
+  }
+
+  .container {
+    max-width: 1140px; /* Bootstrap default container max-width */
+  }
+
+  .content {
+    padding: 20px;
+    margin-top: 80px; /* Add space to prevent content from hiding behind sticky header */
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+/* Optional: Styling for mobile screens */
+@media (max-width: 768px) {
+    .sticky-heading {
+        padding: 10px 0;
+    }
+    .tabs-nav {
+        overflow-x: auto; /* Horizontal scroll on mobile */
+        scrollbar-width: thin; /* Thin scrollbar for mobile browsers */
+    }
+
+    .tabs-nav a {
+        flex-shrink: 0; /* Prevents items from shrinking */
+    }
+}
+
+  /* Main Container for Two Columns */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Left Content - Scrollable */
+  .left-content {
+    width: 65%;  /* Left column takes up 65% of the space */
+    max-height: calc(100vh - 80px); /* 100vh minus the sticky heading height */
+    overflow-y: auto;
+    padding-right: 20px;
+  }
+  
+  /* Right Sidebar - Fixed/Sticky */
+  .right-sidebar {
+    position: sticky;
+    top: 100px;
+    width: 30%;
+  }
+  
+  /* Right Column Styling */
+  .availability-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 55px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .availability-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .availability-card p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
+  .availability-card .form-label {
+    margin-bottom: 5px;
+  }
+  
+  .availability-card .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .availability-card .btn {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .availability-card .btn:hover {
+    background-color: #23272b;
+  }
+  
+  /* Additional styles for amenities */
+  .amenities {
+    margin-top: 20px;
+  }
+  
+  .amenities ul {
+    list-style-type: none;
+  }
+  
+  .amenities li {
+    display: inline-block;
+    margin-right: 15px;
+    color: #555;
+  }
+  
+  /* Ensure that content below sticky header scrolls under it */
+  html, body {
+    height: 100%;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-content, .right-sidebar {
+      width: 100%;
+    }
+  
+    .right-sidebar {
+      position: relative;
+      top: unset;
+    }
+  }
+
+  .property-title h2 {
+    font-size: 1.5rem; /* Adjust as needed */
+}
+.property-info-item img {
+    vertical-align: middle;
+}
+.usp-item img {
+    height: 24px;
+    width: 24px;
+}
+.usp-item p {
+    margin: 0;
+    font-size: 0.875rem; /* Adjust as needed */
+}
+.btn-brochure {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+.btn-brochure img {
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+/* buttons with features */
+.property-title {
+  gap: 8px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.property-title::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Chrome, Safari, Opera */
+}
+
+.property-title {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 768px) {
+  .property-title {
+    flex-wrap: nowrap; /* Ensure items don't wrap */
+    overflow-x: auto; /* Allow horizontal scrolling */
+  }
+}
+
+
+
+
+/* Amenities */
+.amenities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
+.amenity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 80px; /* Adjust if needed */
+}
+.amenity-img {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c3c7c3;
+  border-radius: 4px;
+}
+.amenity-img img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+.amenity-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #1e1e1e;
+  margin-top: 4px;
+}
+.toggle-amenities-button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #2f80ed;
+  text-decoration: underline;
+  margin-top: 20px;
+  text-underline-offset: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Contact  */
+.contact-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(315.48deg, rgba(156, 205, 251, 0.2) -4.38%, hsla(31, 95%, 78%, 0.2) 107.18%);
+  border-radius: 4px;
+  padding: 14px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contact-us-container img {
+  margin-right: 8px;
+}
+.contact-us-container .btn-custom {
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  border-radius: 40px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+.contact-us-container .btn-custom:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+  
+
+
+
+/* Highlights */
+.custom-property-highlights-root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.custom-property-title-container {
+  position: relative;
+}
+
+.custom-property-title-text {
+  display: flex;
+  align-items: center;
+}
+
+.custom-property-title-divider {
+  border: 2px solid #f5959e;
+  margin-right: 12px;
+  height: 28px;
+}
+
+.custom-property-title h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.custom-property-description {
+  font-family: Inter, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #1e1e1e;
+}
+
+.custom-property-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.custom-property-tag-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-property-tag-item:hover {
+  background: #dbdbdb;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+
+
+/* Spaces */
+
+.custom-wrapper {
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+.custom-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.custom-title-group {
+  display: flex;
+  align-items: center;
+}
+
+.custom-divider {
+  border: 2px solid #f5959e;
+  display: inline;
+  margin-right: 0.75rem;
+  height: 28px;
+}
+
+.custom-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.custom-controls {
+  display: flex;
+  align-items: center;
+}
+
+.custom-control {
+  cursor: pointer;
+  margin: 0 0.75rem;
+}
+
+.custom-text {
+  margin: 0 0.75rem;
+}
+
+.custom-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+}
+
+.custom-item {
+  display: inline-block;
+  width: 350px;
+  height: auto; /* Adjusted to auto for proper text display */
+  margin-right: 1.25rem;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden; /* Ensure no overflow from image or details */
+  background: #fff;
+}
+
+.custom-image {
+  width: 100%;
+  height: 60%; /* Adjusted to fit the item without overlap */
+  object-fit: cover; /* Ensures the image covers the container */
+  border-radius: 8px 8px 0 0; /* Rounded corners on top only */
+}
+
+.custom-item-content {
+  padding: 0.75rem;
+  box-sizing: border-box;
+  height: 40%; /* Adjusted to fit the content within the card */
+}
+
+.custom-item-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.custom-details {
+  margin-top: 0.5rem;
+  font-size: 0.875rem; /* Smaller font size for better fit */
+  color: #000;
+  line-height: 1.5;
+  text-wrap: wrap;
+}
+
+.custom-detail-item {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.custom-detail-item > p {
+  margin-left: 0.5rem;
+  text-wrap: wrap;
+}
+
+.custom-dot {
+  height: 6px;
+  width: 6px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  margin-top: 0.625rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .custom-item {
+      width: 100%;
+      height: auto; /* Adjust height based on content */
+      margin-right: 0.75rem;
+  }
+
+  .custom-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .custom-controls {
+      margin-top: 1rem;
+  }
+}
+
+
+
+/* Amenities  */
+.amenity-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.amenity-img {
+  height: 40px;
+  width: 40px;
+  border: 0.5px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 2px;
+}
+.more-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #0084ff;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.more{
+  color: #0084ff;
+}
+
+
+
+/* location */
+/* Unique classes for villa location section */
+.villa-location-section {
+  margin-bottom: 30px;
+}
+
+.villa-title-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.villa-title-divider {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #007bff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.villa-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.villa-location-map {
+  width: 100%;
+  height: 400px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* Loader skeleton */
+.location-loader {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background-color: #e0e0e0;
+}
+
+/* Description section */
+.villa-description-section {
+  padding: 15px;
+}
+
+.villa-description-collapse p {
+  margin-bottom: 15px;
+}
+
+.villa-read-more {
+  cursor: pointer;
+  font-weight: 600;
+  color: #007bff;
+  text-align: right;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .villa-location-map {
+      height: 250px;
+  }
+
+  .villa-title h2 {
+      font-size: 20px;
+  }
+}
+
+
+/* Experience */
+/* Unique classes for the experiences section */
+.villa-experiences-main {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.villa-experiences-title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.villa-experiences-title-divider {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #007bff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.villa-experiences-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.villa-experiences-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.villa-experience-img {
+  width: 32%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Description */
+.villa-experiences-description {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Button */
+.villa-experiences-button-container {
+  text-align: left;
+}
+
+.villa-experiences-button {
+  background-color: #01070e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.villa-experiences-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .villa-experiences-images {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .villa-experience-img {
+      width: 90%;
+      margin-bottom: 15px;
+  }
+
+  .villa-experiences-title h2 {
+      font-size: 20px;
+  }
+}
+
+
+
+
+.mobile-sidebar {
+  width: 300px; /* Adjust width as needed */
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  height: 100vh; /* Full height on larger screens */
+  box-sizing: border-box;
+}
+
+.availability-widget {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.availability-widget h2 {
+  color: #f1c40f; /* Price color */
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #f1c40f;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d4ac0d;
+}
+
+/* Hide sidebar by default on mobile and tablet view */
+.mobile-sidebar {
+  display: none;
+}
+
+/* Styles for mobile and tablet view */
+@media (max-width: 1024px) {
+  .mobile-sidebar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .availability-widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .availability-widget h2,
+  .btn {
+    margin: 0;
+  }
+
+  .availability-widget .form-control,
+  .availability-widget select {
+    display: none;
+  }
+  
+  .availability-widget .btn {
+    width: 100px;
+    margin-left: 10px;
+  }
+  
+  .availability-widget .price {
+    flex-grow: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

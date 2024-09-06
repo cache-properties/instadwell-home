@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link href="./css/property.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .image-container img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+      </style>
+</head>
+<body>
+  
+    <div class="container mt-5">
+        <div class="row g-4">
+          <!-- Large image -->
+          <div class="col-lg-8">
+            <div class="image-container">
+              <img src="./img/1.jpg" alt="Large Villa Image">
+            </div>
+          </div>
+          
+          <!-- Two smaller images -->
+          <div class="col-lg-4">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="image-container">
+                  <img src="./img/2.jpg" alt="Small Villa Image 1">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="image-container">
+                  <img src="./img/3.jpg" alt="Small Villa Image 2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Sticky Heading -->
+ <!-- Sticky Heading -->
+ <div class="sticky-heading">
+    <div class="container">
+      <nav class="tabs-nav">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#spaces">Spaces</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#meals">Meals</a>
+        <a href="#location">Location</a>
+        <a href="#faq">FAQ's</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    
+    <!-- Left Column Content -->
+    <div class="left-content">
+            <div class="col-12 property-title">
+                <h2>Casa Simoes - Candolim</h2>
+                <p>Goa, Goa</p>
+            </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 property-title mb-3 d-flex flex-row flex-nowrap overflow-auto">
+              <button type="button" class="btn btn-info me-2">Upto 7 guests</button>
+              <button type="button" class="btn btn-info me-2">1 - 3 rooms</button>
+              <button type="button" class="btn btn-info me-2">3 Baths</button>
+              <button type="button" class="btn btn-info me-2">Meals Available</button>
+              <a href="#" class="btn btn-primary btn-brochure d-flex align-items-center">
+                <img src="https://stay-vista.cdn.prismic.io/stay-vista/Zs67ZEaF0TcGJcx7_Group-1-.svg" alt="View Brochure" class="me-1">
+                View Brochure
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row ">
+            <div class="col-12">
+                <span class="font-weight-bold">Great for:</span>
+                <div class="d-inline-block ml-2">
+                  <span>Senior Citizens</span>
+                </div>
+            </div>
+        </div>
+        <div class="amenities-container mt-2">
+          <div class="amenity-item">
+              <div class="amenity-img">
+                  <img src="https://img.vistarooms.com/icon/usp/subcategory/swimming-pool-usp-sub-category-1678961442-7rWc4r.png" alt="Swimming Pool">
+              </div>
+              <p class="amenity-title">Swimming Pool</p>
+          </div>
+          <div class="amenity-item">
+              <div class="amenity-img">
+                  <img src="https://img.vistarooms.com/icon/usp/subcategory/lawn-usp-sub-category-1678961549-f0D9in.png" alt="Lawn">
+              </div>
+              <p class="amenity-title">Lawn</p>
+          </div>
+          <div class="amenity-item">
+              <div class="amenity-img">
+                  <img src="https://img.vistarooms.com/icon/usp/subcategory/beach-view-usp-sub-category-1678279625-HlKfBd.png" alt="Beach View">
+              </div>
+              <p class="amenity-title">Beach View</p>
+          </div>
+          <div class="amenity-item">
+              <div class="amenity-img">
+                  <img src="https://img.vistarooms.com/icon/usp/subcategory/meals-available-usp-sub-category-1679042695-SF8cG1.png" alt="Meals Available">
+                  <div class="rupee-icon">
+                      <img src="https://stay-vista.cdn.prismic.io/stay-vista/8448d442-16b2-4d5d-b047-7eb5e1f35bdd_Rupee.png?auto=compress,format" alt="Rupee" width="16" height="16">
+                  </div>
+              </div>
+              <p class="amenity-title">Meals Available</p>
+          </div>
+          <div class="amenity-item">
+              <div class="amenity-img">
+                  <img src="https://img.vistarooms.com/icon/usp/subcategory/wifi-usp-sub-category-1679042756-djdthk.png" alt="WiFi">
+              </div>
+              <p class="amenity-title">WiFi</p>
+          </div>
+          <button class="toggle-amenities-button">+18 Amenities</button>
+      </div> 
+
+
+
+        <!-- Request a callback -->
+        <div class="contact-us-container">
+          <div class="d-flex align-items-center">
+              <img src="https://stay-vista.cdn.prismic.io/stay-vista/ZoumiB5LeNNTw5Ge_call_icon.svg" height="21" width="21" alt="contact-us">
+              <p class="mb-0 font-weight-bold" style="font-size: 16px; line-height: 24px;">Connect with Host</p>
+          </div>
+          <button class="btn btn-custom">Request Callback</button>
+      </div>
+
+
+<hr>
+      <!-- Highlights -->
+       
+      <div id="highlights" class="custom-property-highlights-root">
+        <div class="custom-property-title">
+          <div class="custom-property-title-container">
+            <div class="custom-property-title-text">
+              <span class="custom-property-title-divider"></span>
+              <h1>Casa Simoes - Candolim Villa in Goa</h1>
+            </div>
+          </div>
+        </div>
+        <div class="custom-property-description">
+          <span class="custom-property-description-text">
+            <p>Spread across an acre and a half of lush green landscape, Casa Simoes is a beautiful property with an unmissable old world charm. The interiors echo the remnants of the gorgeous Portuguese architecture, while the cosy exteriors make the property an ideal group getaway. Merely minutes away from the beach, while here, guests can relax on the lawn hammock, enjoy their favourite drinks in the open air deck overlooking the iconic Goan sunset, or simply enjoy a splash in the pool. For a comfortable and secure stay, please take the time to read the Home Truths, House Rules and Policies thoroughly.</p>
+          </span>
+        </div>
+        <div class="custom-property-tags">
+          <div class="custom-property-tag-item"><span>Explore Your Stay</span></div>
+          <div class="custom-property-tag-item"><span>Home Rules and Truths</span></div>
+          <div class="custom-property-tag-item"><span>Booking &amp; Cancellation Policy</span></div>
+          <div class="custom-property-tag-item"><span>FAQ's</span></div>
+        </div>
+      </div>
+
+      
+
+
+      <!-- Spaces -->
+      <div class="custom-wrapper">
+        <div class="custom-header">
+            <div class="custom-title-group">
+                <div class="custom-divider"></div>
+                <h2 class="custom-title">Spaces</h2>
+            </div>
+        </div>
+        <div class="custom-scroll-container">
+            <div class="custom-item">
+                <img src="https://img.vistarooms.com/space/vsdVMmTjqwRMe0Cclrwfng3dlSt3WGgGMpV7ayCl.jpeg" class="custom-image" alt="Bedroom 1">
+                <div class="custom-details">
+                    <div class="custom-detail-item">
+                        <div class="custom-dot"></div>
+                        <p>This is an air-conditioned room on the first floor of the main villa.</p>
+                    </div>
+                    <div class="custom-detail-item">
+                        <div class="custom-dot"></div>
+                        <p>The room offers a king-sized bed, yoga mat, WiFi and an attached balcony with a garden view.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-item">
+              <img src="https://img.vistarooms.com/space/vsdVMmTjqwRMe0Cclrwfng3dlSt3WGgGMpV7ayCl.jpeg" class="custom-image" alt="Bedroom 1">
+              <div class="custom-details">
+                  <div class="custom-detail-item">
+                      <div class="custom-dot"></div>
+                      <p>This is an air-conditioned room on the first floor of the main villa.</p>
+                  </div>
+                  <div class="custom-detail-item">
+                      <div class="custom-dot"></div>
+                      <p>The room offers a king-sized bed, yoga mat, WiFi and an attached balcony with a garden view.</p>
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+    </div>
+   
+   
+   
+   
+    <div class="custom-wrapper">
+      <div class="custom-header">
+          <div class="custom-title-group">
+              <div class="custom-divider"></div>
+              <h2 class="custom-title">Villa Amenities</h2>
+          </div>
+      </div>
+    <div class="container mt-4">
+      <div class="row">
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/towels-amenity-sub-category-1683703096-zvesGU.png" alt="Towels">
+              <div class="ml-3">
+                  <div>Towels</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/toiletries-amenity-sub-category-1683703416-VMDps1.png" alt="Toiletries">
+              <div class="ml-3">
+                  <div>Toiletries</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/geyser-amenity-sub-category-1683703425-Phr0Eo.png" alt="Geyser">
+              <div class="ml-3">
+                  <div>Geyser</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/bbq-amenity-sub-category-1683703671-VzxQ5r.png" alt="BBQ">
+              <div class="ml-3">
+                  <div>BBQ</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/extra-mattress-amenity-sub-category-1683703518-AoxzVK.png" alt="Extra Mattress">
+              <div class="ml-3">
+                  <div>Extra Mattress</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/indooroutdoor-games-amenity-sub-category-1683703739-Fwx0c4.png" alt="Indoor/Outdoor Games">
+              <div class="ml-3">
+                  <div>Indoor/ Outdoor Games</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/fire-extinguisher-amenity-sub-category-1683703929-vicDme.png" alt="Fire Extinguisher">
+              <div class="ml-3">
+                  <div>Fire Extinguisher</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/refrigerator-amenity-sub-category-1683703797-mMOAuT.png" alt="Refrigerator">
+              <div class="ml-3">
+                  <div>Refrigerator</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/water-purifier-amenity-sub-category-1683703807-I68dG1.png" alt="Water Purifier">
+              <div class="ml-3">
+                  <div>Water Purifier</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/wi-fi-amenity-sub-category-1683703563-p6e3z2.png" alt="Wi-Fi">
+              <div class="ml-3">
+                  <div>Wi-Fi</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/parking-amenity-sub-category-1683703863-1Gzmdy.png" alt="Parking">
+              <div class="ml-3">
+                  <div>Parking</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/swimming-pool-amenity-sub-category-1683703646-ij44Zm.png" alt="Swimming Pool">
+              <div class="ml-3">
+                  <div>Swimming Pool</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/hair-dryer-amenity-sub-category-1683703448-8iODcf.png" alt="Hair Dryer">
+              <div class="ml-3">
+                  <div>Hair Dryer</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/wardrobe-amenity-sub-category-1683703507-Eam4Y3.png" alt="Wardrobe">
+              <div class="ml-3">
+                  <div>Wardrobe</div>
+              </div>
+          </div>
+          <div class="col-md-4 amenity-card">
+            <div class="ml-3">
+                <div class="more">+4 more</div>
+            </div>
+        </div>
+      </div>
+      
+  </div>
+    </div>
+   
+   
+   
+   
+   
+   <!-- Villa Location -->
+
+   <div id="villa-location" class="villa-location-section">
+    <div class="custom-header">
+      <div class="custom-title-group">
+          <div class="custom-divider"></div>
+          <h2 class="custom-title">Villa Map</h2>
+      </div>
+  </div>
+    <span class="location-loader" id="spinner"></span>
+    <iframe class="villa-location-map" id="gmap_canvas" src="https://maps.google.com/maps?q=15.528213200,73.761262800&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed" scrolling="no"></iframe>
+</div>
+
+<div class="villa-description-section">
+    <div class="villa-description-collapse">
+        <p><small>Known for its pristine touch and variety of amusement options around, Candolim is a small town located close to Baga, located on the shores of Arabian Sea. The white sandy beach of Candolim attracts a large number of tourists to enjoy various water activities like parasailing, bump rides, catamaran sailing, banana rides, windsurfing and more.</small></p>
+        <p><small><strong>Getting Around:</strong><br> - Distance from Dabolim Airport - 45 km.<br> - Distance from Thivim Railway Station - 20 km.<br> - Distance from Candolim Beach Bus Stand - 1 km.<br> - Distance from Candolim Market - 1.4 km.</small></p>
+    </div>
+    <div class="villa-read-more">Read More</div>
+</div>
+
+
+
+
+
+<!-- Experience -->
+<div class="villa-experiences-main" id="experiences">
+  <div class="custom-header">
+    <div class="custom-title-group">
+        <div class="custom-divider"></div>
+        <h2 class="custom-title">Experience</h2>
+    </div>
+</div>
+  <div class="villa-experiences-images">
+      <img src="https://stay-vista.cdn.prismic.io/stay-vista/8a2d0b9a-34bb-4663-b7a7-9fc5322785df_1.jpg?auto=compress,format" alt="exp-img-0" class="villa-experience-img">
+      <img src="https://stay-vista.cdn.prismic.io/stay-vista/71daf748-f00c-435f-91ce-60f8a0eadb8c_2.jpeg?auto=compress,format" alt="exp-img-1" class="villa-experience-img">
+      <img src="https://stay-vista.cdn.prismic.io/stay-vista/c801dc2e-dc0d-46c5-8915-bbfa2b6148a6_3_1.jpg?auto=compress,format" alt="exp-img-2" class="villa-experience-img">
+  </div>
+  <div class="villa-experiences-description">
+      Whether you're seeking relaxation, adventure, or simply a break from the ordinary, StayVista's immersive experiences are tailored to meet your preferences. Have a private celebration or just enjoy a bonfire and karaoke night under the stars.
+  </div>
+  <div class="villa-experiences-button-container">
+      <div class="villa-experiences-button">
+          View Experiences
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Right Column (Check Availability) -->
+    <div class="right-sidebar">
+      <div class="availability-card">
+        <h2>₹36,020</h2>
+        <p class="small">(for 3 rooms) Per Night + Taxes</p>
+        <div class="mb-3">
+          <label for="check-in" class="form-label">Check-in</label>
+          <input type="date" class="form-control" id="check-in">
+        </div>
+        <div class="mb-3">
+          <label for="check-out" class="form-label">Check-out</label>
+          <input type="date" class="form-control" id="check-out">
+        </div>
+        <div class="mb-3">
+          <label for="guests" class="form-label">Guests</label>
+          <select class="form-control" id="guests">
+            <option>2 Adults, 0 Children</option>
+            <option>3 Adults, 1 Child</option>
+          </select>
+        </div>
+        <button class="btn btn-dark w-100">Check Availability</button>
+      </div>
+    </div>
+
+    <div class="mobile-sidebar">
+      <div class="availability-widget">
+        <div class="price">
+          <h2>₹36,020</h2>
+          <p class="small">(for 3 rooms) Per Night + Taxes</p>
+        </div>
+        <button class="btn btn-dark">Check Availability</button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+</html>
