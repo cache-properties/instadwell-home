@@ -724,6 +724,9 @@
 
 /* Styles for mobile and tablet view */
 @media (max-width: 1024px) {
+  .right-sidebar{
+    display: none;
+  }
   .mobile-sidebar {
     display: block;
     position: fixed;
