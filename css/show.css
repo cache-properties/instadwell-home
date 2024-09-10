@@ -368,14 +368,11 @@ p {
 
 .PropertyTabHeader_property_mobile_tab_header_root__IGsF2 { 
     display: flex; 
-    align-items: center; 
-    background-color: #fff; 
+    align-items: center;  
     position: sticky; 
-    top: 79px; 
-    z-index: 10; 
+    top: 79px;  
     margin-top: 12px; 
     margin-bottom: 20px; 
-    border-bottom: 1px solid #e6e6e6; 
     align-self: normal;
 } 
 
