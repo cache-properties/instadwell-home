@@ -4,667 +4,715 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-   <link href="./css/property.css" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="./property.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        .image-container img {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-        }
-      </style>
+
 </head>
 <body>
-  <div class="offcanvas-menu-overlay"></div>
-  <div class="offcanvas-menu-wrapper">
-      <div class="offcanvas__logo">
-          <a href="./index.html"><img src="img/logo.png" alt=""></a>
-      </div>
-      <div id="mobile-menu-wrap"></div>
-      
-      <div class="offcanvas__widget">
-          <ul>
-              <li><span class="icon_pin_alt"></span> 96 Ernser Vista Suite 437, NY, US</li>
-              <li><span class="icon_phone"></span> (123) 456-78-910</li>
-          </ul>
-      </div>
-      <div class="offcanvas__auth">
-          <ul>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Register</a></li>
-          </ul>
-      </div>
-  </div>
-<!-- header -->
-<header class="header">
-<div class="header__nav__option">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-2">
-              <div class="header__logo">
-                  <a href="./index.html"><img class="log" src="img/logo.png" alt=""></a>
-              </div>
-          </div>
-          <div class="col-lg-10">
-              <div class="header__nav">
-                  <nav class="header__menu">
-                      <ul class="menu__class">
-                          <li class="active"><a href="./index.html">Home</a></li>
-                          <li><a href="#">Rooms</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">News</a></li>
-                          <li><a href="#">Contact</a></li>
-                      </ul>
-                  </nav>
-                  <div class="header__nav__widget">
-                      <button class="btn btn-dark" type="button">Search</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="canvas__open">
-          <span class="fa fa-bars"></span>
-      </div>
-  </div>
-</div>
-</header>
-
-  
-
-<div class="container mt-5">
-    <div class="row g-4 d-none d-lg-flex">
-        <!-- Large image -->
-        <div class="col-lg-8">
-            <div class="image-container">
-                <img src="./img/1.jpg" alt="Large Villa Image" class="img-fluid">
-            </div>
-        </div>
-
-        <!-- Two smaller images -->
-        <div class="col-lg-4">
-            <div class="row g-4">
-                <div class="col-12">
-                    <div class="image-container">
-                        <img src="./img/2.jpg" alt="Small Villa Image 1" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="image-container">
-                        <img src="./img/3.jpg" alt="Small Villa Image 2" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Carousel for mobile view -->
-    <div id="villaCarousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/1.jpg" class="d-block w-100" alt="Large Villa Image">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/2.jpg" class="d-block w-100" alt="Small Villa Image 1">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/3.jpg" class="d-block w-100" alt="Small Villa Image 2">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#villaCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#villaCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
-
-    <!-- <div class="container mt-5">
-        <div class="row g-4">
-          
-          <div class="col-lg-8">
-            <div class="image-container">
-              <img src="./img/1.jpg" alt="Large Villa Image">
-            </div>
-          </div>
-          
-         
-          <div class="col-lg-4">
-            <div class="row g-4">
-              <div class="col-12">
-                <div class="image-container">
-                  <img src="./img/2.jpg" alt="Small Villa Image 1">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="image-container">
-                  <img src="./img/3.jpg" alt="Small Villa Image 2">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-       <!-- Sticky Heading -->
- <!-- Sticky Heading -->
- <div class="">
-    <div class="container">
-      <nav class="tabs-nav">
-        <a href="#overview">Overview</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#spaces">Spaces</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#location">Location</a>
-        <a href="#experience">Experience</a>
-      </nav>
-    </div>
-  </div>
-
-  <!-- Main Container -->
-  <div class="container">
-    
-    <!-- Left Column Content -->
-    <div class="left-content">
-            <div class="col-12 property-title">
-                <h2>Casa Simoes - Candolim</h2>
-                <p>Goa, Goa</p>
-            </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 property-title mb-3 d-flex flex-row flex-nowrap overflow-auto">
-              <button type="button" class="btn btn-info me-2">Upto 7 guests</button>
-              <button type="button" class="btn btn-info me-2">1 - 3 rooms</button>
-              <button type="button" class="btn btn-info me-2">3 Baths</button>
-              <button type="button" class="btn btn-info me-2">Meals Available</button>
-              <a href="#" class="btn btn-primary btn-brochure d-flex align-items-center">
-                <img src="https://stay-vista.cdn.prismic.io/stay-vista/Zs67ZEaF0TcGJcx7_Group-1-.svg" alt="View Brochure" class="me-1">
-                View Brochure
-              </a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="row ">
-            <div class="col-12">
-                <span class="font-weight-bold">Great for:</span>
-                <div class="d-inline-block ml-2">
-                  <span>Senior Citizens</span>
-                </div>
-            </div>
-        </div>
-        <div class="amenities-container mt-2">
-          <div class="amenity-item">
-              <div class="amenity-img">
-                  <img src="https://img.vistarooms.com/icon/usp/subcategory/swimming-pool-usp-sub-category-1678961442-7rWc4r.png" alt="Swimming Pool">
-              </div>
-              <p class="amenity-title">Swimming Pool</p>
-          </div>
-          <div class="amenity-item">
-              <div class="amenity-img">
-                  <img src="https://img.vistarooms.com/icon/usp/subcategory/lawn-usp-sub-category-1678961549-f0D9in.png" alt="Lawn">
-              </div>
-              <p class="amenity-title">Lawn</p>
-          </div>
-          <div class="amenity-item">
-              <div class="amenity-img">
-                  <img src="https://img.vistarooms.com/icon/usp/subcategory/beach-view-usp-sub-category-1678279625-HlKfBd.png" alt="Beach View">
-              </div>
-              <p class="amenity-title">Beach View</p>
-          </div>
-          <div class="amenity-item">
-              <div class="amenity-img">
-                  <img src="https://img.vistarooms.com/icon/usp/subcategory/meals-available-usp-sub-category-1679042695-SF8cG1.png" alt="Meals Available">
-                  <div class="rupee-icon">
-                      <img src="https://stay-vista.cdn.prismic.io/stay-vista/8448d442-16b2-4d5d-b047-7eb5e1f35bdd_Rupee.png?auto=compress,format" alt="Rupee" width="16" height="16">
-                  </div>
-              </div>
-              <p class="amenity-title">Meals Available</p>
-          </div>
-          <div class="amenity-item">
-              <div class="amenity-img">
-                  <img src="https://img.vistarooms.com/icon/usp/subcategory/wifi-usp-sub-category-1679042756-djdthk.png" alt="WiFi">
-              </div>
-              <p class="amenity-title">WiFi</p>
-          </div>
-          <button class="toggle-amenities-button">+18 Amenities</button>
-      </div> 
-
-
-
-        <!-- Request a callback -->
-        <div class="contact-us-container">
-          <div class="d-flex align-items-center">
-              <img src="https://stay-vista.cdn.prismic.io/stay-vista/ZoumiB5LeNNTw5Ge_call_icon.svg" height="21" width="21" alt="contact-us">
-              <p class="mb-0 font-weight-bold" style="font-size: 16px; line-height: 24px;">Connect with Host</p>
-          </div>
-          <button class="btn btn-custom">Request Callback</button>
-      </div>
-
-
-<hr>
-      <!-- Highlights -->
-       
-      <div id="highlights" class="custom-property-highlights-root">
-        <div class="custom-property-title">
-          <div class="custom-property-title-container">
-            <div class="custom-property-title-text">
-              <span class="custom-property-title-divider"></span>
-              <h1>Casa Simoes - Candolim Villa in Goa</h1>
-            </div>
-          </div>
-        </div>
-        <div class="custom-property-description">
-          <span class="custom-property-description-text">
-            <p>Spread across an acre and a half of lush green landscape, Casa Simoes is a beautiful property with an unmissable old world charm. The interiors echo the remnants of the gorgeous Portuguese architecture, while the cosy exteriors make the property an ideal group getaway. Merely minutes away from the beach, while here, guests can relax on the lawn hammock, enjoy their favourite drinks in the open air deck overlooking the iconic Goan sunset, or simply enjoy a splash in the pool. For a comfortable and secure stay, please take the time to read the Home Truths, House Rules and Policies thoroughly.</p>
-          </span>
-        </div>
-        <div class="custom-property-tags">
-          <div class="custom-property-tag-item"><span>Explore Your Stay</span></div>
-          <div class="custom-property-tag-item"><span>Home Rules and Truths</span></div>
-          <div class="custom-property-tag-item"><span>Booking &amp; Cancellation Policy</span></div>
-          <div class="custom-property-tag-item"><span>FAQ's</span></div>
-        </div>
-      </div>
-
-      
-
-
-      <!-- Spaces -->
-      <div class="custom-wrapper" id="spaces">
-        <div class="custom-header">
-            <div class="custom-title-group">
-                <div class="custom-divider"></div>
-                <h2 class="custom-title">Spaces</h2>
-            </div>
-        </div>
-        <div class="custom-scroll-container">
-            <div class="custom-item">
-                <img src="https://img.vistarooms.com/space/vsdVMmTjqwRMe0Cclrwfng3dlSt3WGgGMpV7ayCl.jpeg" class="custom-image" alt="Bedroom 1">
-                <div class="custom-details">
-                    <div class="custom-detail-item">
-                        <div class="custom-dot"></div>
-                        <p>This is an air-conditioned room on the first floor of the main villa.</p>
-                    </div>
-                    <div class="custom-detail-item">
-                        <div class="custom-dot"></div>
-                        <p>The room offers a king-sized bed, yoga mat, WiFi and an attached balcony with a garden view.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="custom-item">
-              <img src="https://img.vistarooms.com/space/vsdVMmTjqwRMe0Cclrwfng3dlSt3WGgGMpV7ayCl.jpeg" class="custom-image" alt="Bedroom 1">
-              <div class="custom-details">
-                  <div class="custom-detail-item">
-                      <div class="custom-dot"></div>
-                      <p>This is an air-conditioned room on the first floor of the main villa.</p>
-                  </div>
-                  <div class="custom-detail-item">
-                      <div class="custom-dot"></div>
-                      <p>The room offers a king-sized bed, yoga mat, WiFi and an attached balcony with a garden view.</p>
-                  </div>
-              </div>
-          </div>
-          
-        </div>
-    </div>
-   
-   
-   
-   
-    <div class="custom-wrapper" id="amenities">
-      <div class="custom-header">
-          <div class="custom-title-group">
-              <div class="custom-divider"></div>
-              <h2 class="custom-title">Villa Amenities</h2>
-          </div>
-      </div>
-    <div class="container mt-4">
-      <div class="row">
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/towels-amenity-sub-category-1683703096-zvesGU.png" alt="Towels">
-              <div class="ml-3">
-                  <div>Towels</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/toiletries-amenity-sub-category-1683703416-VMDps1.png" alt="Toiletries">
-              <div class="ml-3">
-                  <div>Toiletries</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/geyser-amenity-sub-category-1683703425-Phr0Eo.png" alt="Geyser">
-              <div class="ml-3">
-                  <div>Geyser</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/bbq-amenity-sub-category-1683703671-VzxQ5r.png" alt="BBQ">
-              <div class="ml-3">
-                  <div>BBQ</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/extra-mattress-amenity-sub-category-1683703518-AoxzVK.png" alt="Extra Mattress">
-              <div class="ml-3">
-                  <div>Extra Mattress</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/indooroutdoor-games-amenity-sub-category-1683703739-Fwx0c4.png" alt="Indoor/Outdoor Games">
-              <div class="ml-3">
-                  <div>Indoor/ Outdoor Games</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/fire-extinguisher-amenity-sub-category-1683703929-vicDme.png" alt="Fire Extinguisher">
-              <div class="ml-3">
-                  <div>Fire Extinguisher</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/refrigerator-amenity-sub-category-1683703797-mMOAuT.png" alt="Refrigerator">
-              <div class="ml-3">
-                  <div>Refrigerator</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/water-purifier-amenity-sub-category-1683703807-I68dG1.png" alt="Water Purifier">
-              <div class="ml-3">
-                  <div>Water Purifier</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/wi-fi-amenity-sub-category-1683703563-p6e3z2.png" alt="Wi-Fi">
-              <div class="ml-3">
-                  <div>Wi-Fi</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/parking-amenity-sub-category-1683703863-1Gzmdy.png" alt="Parking">
-              <div class="ml-3">
-                  <div>Parking</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/swimming-pool-amenity-sub-category-1683703646-ij44Zm.png" alt="Swimming Pool">
-              <div class="ml-3">
-                  <div>Swimming Pool</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/hair-dryer-amenity-sub-category-1683703448-8iODcf.png" alt="Hair Dryer">
-              <div class="ml-3">
-                  <div>Hair Dryer</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-              <img class="amenity-img" src="https://img.vistarooms.com/icon/amenity/subcategory/wardrobe-amenity-sub-category-1683703507-Eam4Y3.png" alt="Wardrobe">
-              <div class="ml-3">
-                  <div>Wardrobe</div>
-              </div>
-          </div>
-          <div class="col-md-4 amenity-card">
-            <div class="ml-3">
-                <div class="more">+4 more</div>
-            </div>
-        </div>
-      </div>
-      
-  </div>
-    </div>
-   
-   
-   
-   
-   
-   <!-- Villa Location -->
-
-   <div id="location" class="villa-location-section">
-    <div class="custom-header">
-      <div class="custom-title-group">
-          <div class="custom-divider"></div>
-          <h2 class="custom-title">Villa Map</h2>
-      </div>
-  </div>
-    <span class="location-loader" id="spinner"></span>
-    <iframe class="villa-location-map" id="gmap_canvas" src="https://maps.google.com/maps?q=15.528213200,73.761262800&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed" scrolling="no"></iframe>
-</div>
-
-<div class="villa-description-section">
-    <div class="villa-description-collapse">
-        <p><small>Known for its pristine touch and variety of amusement options around, Candolim is a small town located close to Baga, located on the shores of Arabian Sea. The white sandy beach of Candolim attracts a large number of tourists to enjoy various water activities like parasailing, bump rides, catamaran sailing, banana rides, windsurfing and more.</small></p>
-        <p><small><strong>Getting Around:</strong><br> - Distance from Dabolim Airport - 45 km.<br> - Distance from Thivim Railway Station - 20 km.<br> - Distance from Candolim Beach Bus Stand - 1 km.<br> - Distance from Candolim Market - 1.4 km.</small></p>
-    </div>
-    <div class="villa-read-more">Read More</div>
-</div>
-
-
-
-
-
-<!-- Experience -->
-<div class="villa-experiences-main" id="experience">
-  <div class="custom-header">
-    <div class="custom-title-group">
-        <div class="custom-divider"></div>
-        <h2 class="custom-title">Experience</h2>
-    </div>
-</div>
-  <div class="villa-experiences-images">
-      <img src="https://stay-vista.cdn.prismic.io/stay-vista/8a2d0b9a-34bb-4663-b7a7-9fc5322785df_1.jpg?auto=compress,format" alt="exp-img-0" class="villa-experience-img">
-      <img src="https://stay-vista.cdn.prismic.io/stay-vista/71daf748-f00c-435f-91ce-60f8a0eadb8c_2.jpeg?auto=compress,format" alt="exp-img-1" class="villa-experience-img">
-      <img src="https://stay-vista.cdn.prismic.io/stay-vista/c801dc2e-dc0d-46c5-8915-bbfa2b6148a6_3_1.jpg?auto=compress,format" alt="exp-img-2" class="villa-experience-img">
-  </div>
-  <div class="villa-experiences-description">
-      Whether you're seeking relaxation, adventure, or simply a break from the ordinary, StayVista's immersive experiences are tailored to meet your preferences. Have a private celebration or just enjoy a bonfire and karaoke night under the stars.
-  </div>
-  <div class="villa-experiences-button-container">
-      <div class="villa-experiences-button">
-          View Experiences
-      </div>
-  </div>
-</div>
-
-
-
-
-
-
-<br><br><br><br></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Right Column (Check Availability) -->
-    <div class="right-sidebar">
-      <div class="availability-card">
-        <h2>₹36,020</h2>
-        <p class="small">(for 3 rooms) Per Night + Taxes</p>
-        <div class="mb-3">
-          <label for="check-in" class="form-label">Check-in</label>
-          <input type="date" class="form-control" id="check-in">
-        </div>
-        <div class="mb-3">
-          <label for="check-out" class="form-label">Check-out</label>
-          <input type="date" class="form-control" id="check-out">
-        </div>
-        <div class="mb-3">
-          <label for="guests" class="form-label">Guests</label>
-          <select class="form-control" id="guests">
-            <option>2 Adults, 0 Children</option>
-            <option>3 Adults, 1 Child</option>
-          </select>
-        </div>
-        <button class="btn btn-dark w-100">Check Availability</button>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-  <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="logo__carousel owl-carousel">
-                    <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/logo-1.png" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/logo-2.png" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/logo-3.png" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/logo-4.png" alt=""></a>
-                    </div>
-                    <div class="logo__carousel__item">
-                        <a href="#"><img src="img/logo/logo-5.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="footer__content">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer__about">
-                        <div class="footer__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
-                        <h4>(123) 456-78-91096</h4>
-                        <ul>
-                            <li>Ernser Vista Suite 437, NY</li>
-                            <li>Info.colorlib@gmail.com</li>
-                        </ul>
-                        <!-- <div class="footer__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-                <div class=" offset-lg-1 col-md-5 col-sm-6">
-                    <div class="footer__widget">
-                        <h4>Quick Link</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Booking</a></li>
-                            <li><a href="#">About Us</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Review</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Services</a></li>
-                        </ul>
-                        <ul>
-                           
-                            <li><a href="#">Our Room</a></li>
-                            <li><a href="#">Restaurants</a></li>
-                            <li><a href="#">Payments</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-5 col-md-8 col-sm-12">
-                    <div class="footer__newslatter">
-                        <h4>Subscribe our newlatester</h4>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                              <button class="btn btn-dark" type="button">Subscribe</button>
+    <main class="snipcss-sOowm">
+        <header id="header" data-html="home" class="Property_c-new_header__hD30V Property_c-new_header__hideOnMobile__6EDNw Property_c-new_header__boxShadow__Rrv5d style-2oRxS">
+            <div class="Property_c-new_header__innerWrapper__xjAY2">
+                <div class="Property_c-new_header__lhs__PngkP"><a class="NewHeader_c-new_header__lhs_logoContainer__6VOvG" aria-label="Go to Home Page" href="/"><img class="NewHeader_c-new_header__logo__g4qFD" src="./img/logo.png">
+                        </a></div>
+               
+                <div class="Property_c-new_header__rhs__pYSVt">
+                    <div class="Property_c-new_header__nav__Ldj4Q"><button class="Property_property_page_header_help_btn__8t50a"><img alt="phone" src="https://stay-vista.cdn.prismic.io/stay-vista/ZtBmX0aF0TcGJg1q_image3-traced-.svg" height="18px" width="18px">91 9167928471</button>
+                        <div>
+                            <div id="style-oFzTR" class="style-oFzTR">
+                                <div class="BellIcon_bell-icon-container__xlkU7"><img src="https://stay-vista.cdn.prismic.io/stay-vista/6ed4a7c5-7891-4a7b-9982-ae0d7bcd6dfc_interstetial_bell_icon_dark.svg" height="26px" width="26px" class="BellIcon_bell-icon__0o_xx" alt="bell-icon"><span class="BellIcon_bell-notification-patch__nJoUT "></span></div>
                             </div>
-                          </div>
-                        <div class="footer__newslatter__find">
-                            <h5>Find Us:</h5>
-                            <div class="footer__newslatter__find__links">
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                                <a href="#"><i class="fa fa-map-o"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-forumbee"></i></a>
-                            </div>
-                        </div>
+                        </div><button class="NewHeader_c-new_header__navItem__fEfZM NewHeader_-you__1XEH3"><svg class="NewHeader_c-new_header__navItemIcon__ZY2wp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <path fill="#1e1e1e" d="M15,30a15,15,0,1,1,10.61-4.39A14.93,14.93,0,0,1,15,30Zm-.31-14.71A5.7,5.7,0,0,0,9,20.84v.34a1.5,1.5,0,0,0,.44,1.06,1.46,1.46,0,0,0,1.05.44h8.4a1.5,1.5,0,0,0,1.5-1.5v-.34a5.7,5.7,0,0,0-5.7-5.55Zm0-7.79A3.48,3.48,0,0,0,11.2,11a3.49,3.49,0,0,0,6,2.47,3.5,3.5,0,0,0-2.48-6Z"></path>
+                            </svg></button>
                     </div>
-                </div> -->
+                </div>
             </div>
-        </div>
+        </header>
         
-    </div>
-</footer>
+        
+        <div class="Property_property_main__rWlE8">
+            <div class="PropertyImageGallery_property__imageGallery__zfo7r" id="property__imageGallery">
+                <div class="WishList_heartIcon_propertypage__72Rjb "><img alt="wishlist" src="https://stay-vista.cdn.prismic.io/stay-vista/206613c5-1623-44d4-94b4-d1cac0aab042_Heart_Border.svg"></div>
+                <div class="PropertyImageGallery_property__imageGallery_shareIconContainer__FQ3Sa "><img src="https://stay-vista.cdn.prismic.io/stay-vista/fb92045f-f861-49eb-88b7-ebe88845a605_Black.svg" alt="Stay Vista" id="style-k4A1O" class="style-k4A1O"></div>
+                <div class="PropertyImageGallery_property__imageGallery_vertical__m6r1A"><img alt="Outdoors" src="./img/accomodations/1.webp" class="PropertyImageGallery_property__image_banner__94p9h">
+                    <div class="PropertyImageGallery_property__banner_right_botton_div__f0mGw">
+                        <div class="PropertyImageGallery_property__banner_right_botton_pagination_div__SGATV">
+                            <div class="PropertyImageGallery_property__banner_right_botton_pagination_item__6YXqm"></div>
+                            <div class="PropertyImageGallery_property__banner_right_botton_pagination_item__6YXqm"></div>
+                            <div class="PropertyImageGallery_property__banner_right_botton_pagination_item__6YXqm"></div>
+                            <div class="PropertyImageGallery_property__banner_right_botton_pagination_item__6YXqm"></div>
+                            <div class="PropertyImageGallery_property__banner_right_botton_pagination_item__6YXqm"></div>
+                        </div>
+                        <!-- <div id="style-CPHLx" class="style-CPHLx"><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium PropertyImageGallery_property__view_more_button__lozM2 css-5rr5x6 style-ZL9gq" tabindex="0" type="button" animation="button-hover" id="style-ZL9gq"><img src="https://stay-vista.cdn.prismic.io/stay-vista/2c0c045f-fa18-4b0b-9ea8-f971019d505a_gallery_image_icon.svg" alt="Stay Vista">
+                                <p class="PropertyImageGallery_property__view_photos_button_txt__YE2XI">View Photos</p>
+                            </button></div> -->
+                    </div>
+                </div>
+                <div class="PropertyImageGallery_property__imageGallery_horizontal__3ybCY">
+                    <div class="PropertyImageGallery_property__imageGallery_horizontal_img__F_0G7"><img alt="Exterior" src="./img/accomodations/2.webp" class="PropertyImageGallery_property__image_banner__94p9h"></div>
+                    <div class="PropertyImageGallery_property__imageGallery_horizontal_img2__w7wgK"><img alt="Outdoors" src="./img/accomodations/3.webp" class="PropertyImageGallery_property__image_banner__94p9h"></div>
+                </div>
+                <div class="PropertyImageGallery_property__imageGallery_bannertags_container__wuieK">
+                    <div class="PropertyImageGallery_property__imageGallery_banner_tag__SghhO PropertyImageGallery_property__imageGallery_banner_tag_luxary__q9liW"><span>Luxury</span></div>
+                    <div class="PropertyImageGallery_property__imageGallery_banner_tag__SghhO"><span>Marriott Bonvoy</span></div>
+                </div>
+            </div>
+            <div></div>
+            <div style="display: flex; flex-direction: column; flex: 1 1 0%; position: relative; width: 100%;">
+                <div id="property-details-sticky-header" class="PropertyTabHeader_property_mobile_tab_header_root__IGsF2 style-X1h8V">
+                    <div class="PropertyTabHeader_property_mobile_tab_header_item__R6ds9 PropertyTabHeader_active__cUxUl" id="header_item-Overview"><span class="PropertyTabHeader_property_mobile_tab_header_item_span__aoZTt">Overview</span></div>
+                    <div class="PropertyTabHeader_property_mobile_tab_header_item__R6ds9" id="header_item-Highlights"><span class="PropertyTabHeader_property_mobile_tab_header_item_span__aoZTt"><a href="#highlights">Highlights</a></span></div>
+                    <div class="PropertyTabHeader_property_mobile_tab_header_item__R6ds9" id="header_item-Spaces"><span class="PropertyTabHeader_property_mobile_tab_header_item_span__aoZTt"><a href="#spaces">Spaces</a></span></div>
+                    <div class="PropertyTabHeader_property_mobile_tab_header_item__R6ds9" id="header_item-Amenities"><span class="PropertyTabHeader_property_mobile_tab_header_item_span__aoZTt"><a href="#amenities">Amenities</a></span></div>
+                    <div class="PropertyTabHeader_property_mobile_tab_header_item__R6ds9" id="header_item-Meals"><span class="PropertyTabHeader_property_mobile_tab_header_item_span__aoZTt"><a href="#meals">Meals</a></span></div>
+                    <div class="PropertyTabHeader_property_mobile_tab_header_item__R6ds9" id="header_item-Location"><span class="PropertyTabHeader_property_mobile_tab_header_item_span__aoZTt"><a href="#location">Location</a></span></div>
+                    <div class="PropertyTabHeader_property_mobile_tab_header_item__R6ds9" id="header_item-Experiences"><span class="PropertyTabHeader_property_mobile_tab_header_item_span__aoZTt"><a href="#experiences">Experiences</a></span></div>
+                </div>
+                <div id="style-OBdlc" class="style-OBdlc"></div>
+                <div class="MuiGrid-root MuiGrid-container Property_property__detail_root__zLS6a css-sfdl7">
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-8 Property_property__detail_left__JHUEC css-gt4wa4" id="property-detail-left">
+                        <div id="overview">
+                            <div class="PropertyTitle_property__detail_title_root__00m6J">
+                                <div class="PropertyTitle_property__detail_title_wrapper__4vOhP">
+                                    <div class="PropertyTitle_property__detail_title_main_div_main__DVZ8H">
+                                        <div class="PropertyTitle_property__detail_title_div__6WKqd">
+                                            <h2 class="PropertyTitle_property__detail_title__K_kD4">Brighton Residence, Boston</h2>
+                                            <div class="PropertyTitle_property__detail_title_inline_block__wGQtQ">
+                                                <div class="PropertyTitle_property__detail_title_inline_div__kI4jE">
+                                                    <div class="PropertyTitle_property__detail_title_inline_subdiv__zIpUb">
+                                                        <div class="PropertyRating_property__detail_rating_root__wgNPC">
+                                                            <div class="PropertyRating_property__detail_rating_wrapper__g8T69"></div>
+                                                        </div>
+                                                        <div class="PropertyTitle_property__detail_title_review_txt__uq7_6">11 Reviews</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                    <p class="PropertyTitle_property__detail_subTitle__FW31B">Washington St, Boston, 02135, United States</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div></div>
+                            <div class="PropertyInfo_property__info_detail_root__RP1P3">
+                                <div class="PropertyInfo_property__info_detail_item__2eqrq"><img alt="property__info_detail_item" src="https://stay-vista.cdn.prismic.io/stay-vista/ca9f8a46-ff90-4015-8b2e-599186a50be7_user.svg" height="16px" width="16px">
+                                    <p>Up to 15 Guests</p>
+                                </div>
+                                <div class="PropertyInfo_property__info_detail_item__2eqrq"><img src="https://stay-vista.cdn.prismic.io/stay-vista/90926249-9209-499e-84d5-47b8bec4331c_bed.svg" height="16px" width="16px" alt="property__info_detail_guest">
+                                    <p>1 - 6 Rooms</p><img src="https://stay-vista.cdn.prismic.io/stay-vista/edd340f9-8c2d-410c-b9de-5cf6ab07af47_info.svg" height="16" width="16" alt="meals Info Icon" id="style-qqilD" class="style-qqilD">
+                                </div>
+                                <div class="PropertyInfo_property__info_detail_item__2eqrq"><img src="https://stay-vista.cdn.prismic.io/stay-vista/a3bcfe0d-7701-4532-aa67-9eae909c5d56_bath.svg" height="16px" width="16px" alt="property__info_detail_bath">
+                                    <p>6 Baths</p>
+                                </div>
+                                <div class="PropertyInfo_property__info_detail_item__2eqrq"><img src="https://stay-vista.cdn.prismic.io/stay-vista/64740dd8-153d-4f7b-8fc2-27a2e4743f92_meals.svg" height="16px" width="16px" alt="property__info_detail_meals">
+                                    <p> Meals Available</p>
+                                </div>
+                                <div class="Property_downloadpdf_btn__4z_E8 style-GozNw" aria-label="View Brochure" id="style-GozNw"><img src="https://stay-vista.cdn.prismic.io/stay-vista/Zs67ZEaF0TcGJcx7_Group-1-.svg" alt="pdf">
+                                    <p class="MuiTypography-root MuiTypography-body1 css-100vuwi">View Brochure</p>
+                                </div>
+                            </div>
+                            <div class="PropertyInfo_property_info_topBlock_villaTags__nH4tx"><span class="PropertyInfo_property_info_topBlock_great_service_text__eneVR">Great for: </span>
+                                <div class="PropertyInfo_property_info_tag_div__ztzVm"><span><img src="https://images.prismic.io/stay-vista/ZgXoHMt2UUcvBQ-S_senior_citizen2.png?auto=format,compress" alt="Senior Citizen Friendly" class="PropertyInfo_property_info_topBlock_villaTags_img__gcUS6"></span><span class="PropertyInfo_property_info_topBlock_villaTags_txt__FHMyF">Senior Citizens</span></div>
+                                <div class="PropertyInfo_property_info_tag_div__ztzVm"><span><img src="https://stay-vista.cdn.prismic.io/stay-vista/e7ebfe1d-1891-4ba3-98fe-747460551e13_kids_greatFor.svg" alt="Great For Kids" class="PropertyInfo_property_info_topBlock_villaTags_img__gcUS6"></span><span class="PropertyInfo_property_info_topBlock_villaTags_txt__FHMyF">Kids</span></div>
+                                <div class="PropertyInfo_property_info_tag_div__ztzVm"><span><img src="https://stay-vista.cdn.prismic.io/stay-vista/04f2b7df-0513-4036-9709-1c329bdfac99_house-2+1+%28traced%29.svg" alt="Great Design" class="PropertyInfo_property_info_topBlock_villaTags_img__gcUS6"></span><span class="PropertyInfo_property_info_topBlock_villaTags_txt__FHMyF">Design</span></div>
+                            </div>
+                            <div class="PropertyUsp_property__usp_root__hOjEu">
+                                <div class="PropertyUsp_property__usp_item__uq4sI style-P9om4" id="style-P9om4">
+                                    <div class="PropertyUsp_property__usp_img__unqqP"><img src="./img/accomodations/swim.webp" alt="aminites_img" id="style-xcbhP" class="iconimg"></div>
+                                    <p class="PropertyUsp_property__usp_title__XPHn4 style-rNhns" id="style-rNhns">Swimming Pool</p>
+                                </div>
+                                <div class="PropertyUsp_property__usp_item__uq4sI style-Mlb5E" id="style-Mlb5E">
+                                    <div class="PropertyUsp_property__usp_img__unqqP"><img src="./img/accomodations/icon1.webp" alt="aminites_img" id="style-iXYOo" class="iconimg"></div>
+                                    <p class="PropertyUsp_property__usp_title__XPHn4 style-Tp3AE" id="style-Tp3AE">Lawn</p>
+                                </div>
+                                <div class="PropertyUsp_property__usp_item__uq4sI style-sy2N3" id="style-sy2N3">
+                                    <div class="PropertyUsp_property__usp_img__unqqP"><img src="./img/accomodations/wifi.webp" alt="aminites_img" id="style-3pCMJ" class="iconimg"></div>
+                                    <p class="PropertyUsp_property__usp_title__XPHn4 style-JkFtt" id="style-JkFtt">WiFi</p>
+                                </div>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#amenitiesModal">
+                                    + 21 Amenities
+                                  </button>
+                            </div>
+                        </div>
+
+<!-- toggle of amenities -->
+<!-- Modal -->
+<div class="modal fade" id="amenitiesModal" tabindex="-1" aria-labelledby="amenitiesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="amenitiesModalLabel">USP & Amenities</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Content with icons -->
+          <div class="row">
+            <div class="col-sm">
+              <p><i class="fas fa-swimmer"></i>Heating</p>
+              <p><i class="fas fa-tree"></i>water</p>
+              
+            </div>
+            <div class="col-sm">
+                <p><i class="bi bi-wifi"></i> WiFi</p>
+                <p><i class="bi bi-wifi"></i> Electricity</p>
+            </div>
+          </div>
+          <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_divider__UEj20 css-jx2vta">
+          <div class="row">
+            <h5 class="modal-title" id="amenitiesModalLabel">Common Amenities</h5>
+            <div class="col-sm">
+              <p><i class="fas fa-swimmer"></i> Gym</p>
+              <p><i class="fas fa-tree"></i> Infinity Pool</p>
+            </div>
+            <div class="col-sm">
+              <p><i class="fas fa-cocktail"></i>Longue</p>
+              <p><i class="fas fa-utensils"></i>Co-working Space</p>
+            </div>
+            <div class="col-sm">
+                <p><i class="fas fa-cocktail"></i>Rooftop</p>
+                <p><i class="fas fa-utensils"></i>Washer / Dryer</p>
+              </div>
+          </div>
 
 
 
 
-
-
-  <div class="mobile-sidebar">
-    <div class="availability-widget">
-      <div class="price">
-        <h2>₹36,020</h2>
+        </div>
       </div>
-      <button class="btn btn-dark">Check Availability</button>
     </div>
   </div>
-
   
 
 
 
+                        <div class="PropertyUsp_property__usp_div__KhegO">
+                            <div class="PropertyUsp_property__usp_div_wrapper__0tVjm"><img src="https://stay-vista.cdn.prismic.io/stay-vista/ZoumiB5LeNNTw5Ge_call_icon.svg" height="21px" width="21px" alt="contact-us">
+                                <p class="MuiTypography-root MuiTypography-body1 PropertyUsp_property__usp_question__xZa_l css-100vuwi">Connect with Host</p>
+                            </div>
+                            <div id="style-mFCaP" class="style-mFCaP"><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium PropertyUsp_property__usp_btn__6KtcU css-5rr5x6 style-okjIa" tabindex="0" type="button" id="style-okjIa">
+                                    <p>Request Callback</p>
+                                </button></div>
+                        </div>
+                        <div id="highlights" class="PropertyHighlights_property_highlights_root__C26iO">
+                            <div class="ProeprtyTabTitle_property_tab__title_container__cq1TK">
+                                <div class="ProeprtyTabTitle_property_tab__title__UnVpY"><span class="ProeprtyTabTitle_property_title_divider__SbGzj"></span>
+                                    <h1>Pranaam - Villa in Alibaug</h1>
+                                </div>
+                            </div>
+                            <div class="PropertyHighlights_property_highlights_description__hcJdC"><span class="PropertyHighlights_property_vibeCheck_collapse__U_WBQ">
+                                    <p>With a beautiful modern exterior and luxurious interiors, Pranaam Villa is the epitome of a holiday retreat. Located only a few hours away from the city, barely 10 minutes from Mandwa Jetty, this sprawling property is ideal to spend time with your loved ones. Along with cosy outdoor sit-outs for you to enjoy spending time with your friends and family, this villa is also equipped with an open-to-sky shamiana and a private pool. The gorgeous lawn also offers several slides, swings and a trampoline to keep your little ones occupied!&nbsp; Watch this Instagram Reel to catch a glimpse of the property: https://www.instagram.com/reel/CIw-NS0JkXc/</p>
+                                </span></div>
+                            <div class="PropertyHighlights_property_highlights_tags_div__7d989">
+                                <div class="PropertyHighlights_property_highlights_tags_item__wUsFx"><span>Explore Your Stay</span></div>
+                                <div class="PropertyHighlights_property_highlights_tags_item__wUsFx"><span>Home Rules and Truths</span></div>
+                                <div class="PropertyHighlights_property_highlights_tags_item__wUsFx"><span>Booking &amp; Cancellation Policy</span></div>
+                                <div class="PropertyHighlights_property_highlights_tags_item__wUsFx"><span>FAQ's</span></div>
+                            </div>
+                        </div>
+                        <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_divider__UEj20 css-jx2vta">
+                        <div id="spaces" class="PropertySpaces_property__spaces_root__zyyPR">
+                            <div class="PropertySpaces_property__spaces_arrow_div__bwmqv">
+                                <div class="ProeprtyTabTitle_property_tab__title_container__cq1TK">
+                                    <div class="ProeprtyTabTitle_property_tab__title__UnVpY"><span class="ProeprtyTabTitle_property_title_divider__SbGzj"></span>
+                                        <h2>Spaces</h2>
+                                    </div>
+                                </div>
+                                <div class="PropertySpaces_property__spaces_arrow_div_sub__066SL">
+                                    <div class="PropertySpaces_property__spaces_arrow_left__ASZ3g PropertySpaces_is-disabled__yLYdj"><img src="https://stay-vista.cdn.prismic.io/stay-vista/ZhYgHDjCgu4jzt4__rightIcon.svg" alt="Stay Vista"></div><span class="PropertySpaces_property__spaces_arrow_count__Ekhz2">2 / 12</span>
+                                    <div class="PropertySpaces_property__spaces_arrow_right__Ed14q"><img src="https://stay-vista.cdn.prismic.io/stay-vista/ZhYgHDjCgu4jzt4__rightIcon.svg" alt="Stay Vista"></div>
+                                </div>
+                            </div>
+                            <div class="PropertySpaces_property__spaces_root_wrapper__jG0kA">
+                                <div id="spaces_div" class="PropertySpaces_property__spaces_wrapper__FupXS">
+                                    <div id="spaces_item" class="PropertySpaces_property__spaces_item__bg1qf">
+                                        <div class="PropertySpaces_property__spaces_img_div__WUSnM"><img src="https://img.vistarooms.com/space/yppcJNAnTTn8OYHSy4BIWNXwJZ8KNaRbaA4T3K71.jpeg" class="PropertySpaces_property__spaces_img__LKK0O" alt="aminites_img">
+                                            <div class="PropertySpaces_property__spaces_title_div_container__ZXZ7i">
+                                                <div class="PropertySpaces_property__spaces_title_div__g_2aR"><span>Bedroom 1</span></div>
+                                            </div>
+                                            <div class="PropertySpaces_property__spaces_sub_title_div__f2KbY">King-sized bed</div>
+                                        </div>
+                                        <div>
+                                            <div class="PropertySpaces_property__spaces_details_item__cQuJu">
+                                                <div class="PropertySpaces_property__spaces_dots__Vq43S"></div>
+                                                <p>This is an air-conditioned room on the first floor.</p>
+                                            </div>
+                                            <div class="PropertySpaces_property__spaces_details_item__cQuJu">
+                                                <div class="PropertySpaces_property__spaces_dots__Vq43S"></div>
+                                                <p>The room offers a king-sized bed, WiFi access and an attached balcony with a pool view.</p>
+                                            </div>
+                                            <div class="PropertySpaces_property__spaces_details_item__cQuJu">
+                                                <div class="PropertySpaces_property__spaces_dots__Vq43S"></div>
+                                                <p>It has an attached bathroom equipped with a geyser, towels, basic toiletries and a separate dressing area.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="spaces_item" class="PropertySpaces_property__spaces_item__bg1qf">
+                                        <div class="PropertySpaces_property__spaces_img_div__WUSnM"><img src="https://img.vistarooms.com/space/gaLRgcsretW5Y64fLKNHdNXV8vRfGkHgG4MkRaZ2.jpeg" class="PropertySpaces_property__spaces_img__LKK0O" alt="aminites_img">
+                                            <div class="PropertySpaces_property__spaces_title_div_container__ZXZ7i">
+                                                <div class="PropertySpaces_property__spaces_title_div__g_2aR"><span>Bedroom 2</span></div>
+                                            </div>
+                                            <div class="PropertySpaces_property__spaces_sub_title_div__f2KbY">King-sized bed</div>
+                                        </div>
+                                        <div>
+                                            <div class="PropertySpaces_property__spaces_details_item__cQuJu">
+                                                <div class="PropertySpaces_property__spaces_dots__Vq43S"></div>
+                                                <p>This is an air-conditioned room on the first floor.</p>
+                                            </div>
+                                            <div class="PropertySpaces_property__spaces_details_item__cQuJu">
+                                                <div class="PropertySpaces_property__spaces_dots__Vq43S"></div>
+                                                <p>The room offers a king-sized bed, WiFi access and a garden view.</p>
+                                            </div>
+                                            <div class="PropertySpaces_property__spaces_details_item__cQuJu">
+                                                <div class="PropertySpaces_property__spaces_dots__Vq43S"></div>
+                                                <p>It has an attached bathroom equipped with a geyser, towels, basic toiletries and a separate dressing area.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_divider__UEj20 css-jx2vta">
+                        <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_divider__UEj20 css-jx2vta">
+                        <div id="amenities" class="PropertyAmenities_property__amenities_root__4XfUV">
+                            <div class="ProeprtyTabTitle_property_tab__title_container__cq1TK">
+                                <div class="ProeprtyTabTitle_property_tab__title__UnVpY"><span class="ProeprtyTabTitle_property_title_divider__SbGzj"></span>
+                                    <h2>Villa Amenities</h2>
+                                </div>
+                            </div>
+                            <div class="PropertyAmenities_property__amenities_wrapper__CajaJ">
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/indooroutdoor-games-amenity-sub-category-1683703739-Fwx0c4.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Indoor/ Outdoor Games </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/bar-amenity-sub-category-1683703764-G3tdqP.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Bar </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/parking-amenity-sub-category-1683703863-1Gzmdy.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Parking </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/wheelchair-friendly-amenity-sub-category-1683703900-Q5OSPG.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Wheelchair Friendly </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/cctv-amenity-sub-category-1683703909-skM1Iz.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">CCTV </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/fire-extinguisher-amenity-sub-category-1683703929-vicDme.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Fire Extinguisher </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/wi-fi-amenity-sub-category-1683703563-p6e3z2.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Wi-Fi </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/ac-amenity-sub-category-1683703597-LxA9gO.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">AC </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/balconyterrace-amenity-sub-category-1683703620-tvmS3G.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Balcony/ Terrace </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/wardrobe-amenity-sub-category-1683703507-Eam4Y3.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Wardrobe </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img src="https://stay-vista.cdn.prismic.io/stay-vista/b18c2ef8-2d86-4fd5-b1e1-1c31a5826cdb_rupees_icon.svg" alt="cost" class="PropertyAmenities_property__amenities_rupeeImg__Y8Fn1"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/bbq-amenity-sub-category-1683703671-VzxQ5r.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">BBQ </div>
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_price__8tirn">₹1,500</div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/lawn-amenity-sub-category-1683703658-mByFDa.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Lawn </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/swimming-pool-amenity-sub-category-1683703646-ij44Zm.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Swimming Pool </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_item__5GUt1">
+                                    <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq">
+                                        <div class="PropertyAmenities_property__amenities_imgContainer__gwqbq"><img class="PropertyAmenities_property__amenitiesModal_categoryMember_img__bwpu6" src="https://img.vistarooms.com/icon/amenity/subcategory/water-purifier-amenity-sub-category-1683703807-I68dG1.png" alt="aminites_img"></div>
+                                    </div>
+                                    <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName__TVvCy">
+                                        <div class="PropertyAmenities_property__amenitiesModal_categoryMemberName_txt__t3RG7">Water Purifier </div>
+                                    </div>
+                                </div>
+                                <div class="PropertyAmenities_property__amenities_more_txt__jy_Su">+7 more</div>
+                            </div>
+                        </div>
+                        <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_divider__UEj20 css-jx2vta">
+                        <div id="meals" class="PropetyMeals_property__meals_root___l1W7 style-SDBmc">
+                            <div class="ProeprtyTabTitle_property_tab__title_container__cq1TK">
+                                <div class="ProeprtyTabTitle_property_tab__title__UnVpY"><span class="ProeprtyTabTitle_property_title_divider__SbGzj"></span>
+                                    <h2>Meals</h2>
+                                </div>
+                            </div>
+                            <div class="PropetyMeals_property__meals_wrapper__mOKzJ">
+                                <div class="PropetyMeals_property__meals_body__3WjA4">
+                                    <div class="PropetyMeals_property__meals_banner__m8GjN">
+                                        <div class="PropetyMeals_property__meals_banner_playButton_container__lIMRS"><img src="https://stay-vista.cdn.prismic.io/stay-vista/9f97b7c1-9b8b-4690-b74b-95e130d29743_play_button_meals.svg" alt="Play Button" class="PropetyMeals_property__meals_banner_playButton_img__pfftZ"></div>
+                                        <div class="PropetyMeals_property__meals_banner_backdrop__nHONM"></div><img class="PropetyMeals_property__meals_banner_img__ks7Rl" alt="meals_banner" src="https://images.prismic.io/stay-vista/0764a52c-a70d-49aa-a6e0-ae70d4cec0e7_image+242.png?auto=compress,format">
+                                    </div>
+                                    <div class="PropetyMeals_property__meals_button_div__0vp_c">
+                                        <div>
+                                            <div id="style-8ZKO4" class="style-8ZKO4"><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium PropetyMeals_property__meals_button__oUR2N css-5rr5x6 style-nkBCT" tabindex="0" type="button" id="style-nkBCT">
+                                                    <p class="PropetyMeals_property__meals_button_title__fVpdo"><img src="https://stay-vista.cdn.prismic.io/stay-vista/be8f5046-ad8e-4f88-8259-5c7ae4518700_div.svg" alt="veg" width="12px" height="12px"><span> Veg Menu</span></p>
+                                                </button></div>
+                                        </div>
+                                        <div>
+                                            <div id="style-lE1qG" class="style-lE1qG"><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium PropetyMeals_property__meals_button__oUR2N css-5rr5x6 style-raRVY" tabindex="0" type="button" id="style-raRVY">
+                                                    <p class="PropetyMeals_property__meals_button_title__fVpdo"><img src="https://stay-vista.cdn.prismic.io/stay-vista/be8f5046-ad8e-4f88-8259-5c7ae4518700_div.svg" alt="veg" width="12px" height="12px"><img src="https://stay-vista.cdn.prismic.io/stay-vista/ac0d6c5d-bbeb-451c-932d-32398638774b_Polygon+1+%281%29.svg" alt="nonveg" width="12px" height="12px"><span> Mix Menu</span></p>
+                                                </button></div>
+                                        </div>
+                                        <div>
+                                            <div id="style-gTlfU" class="style-gTlfU"><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium PropetyMeals_property__meals_button__oUR2N css-5rr5x6 style-TKbFO" tabindex="0" type="button" id="style-TKbFO">
+                                                    <p class="PropetyMeals_property__meals_button_title__fVpdo"><span> View More</span></p>
+                                                </button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="PropetyMeals_property__meals_info_div__5UzVE">
+                                <div class="PropetyMeals_property__meals_info_item__4hNBp">
+                                    <div class="PropetyMeals_property__meals_correct__dVJKf"></div><span class="PropetyMeals_property_meals_info_text__CZ913">All rates are on a per person, per day basis.</span>
+                                </div>
+                                <div class="PropetyMeals_property__meals_info_item__4hNBp">
+                                    <div class="PropetyMeals_property__meals_correct__dVJKf"></div><span class="PropetyMeals_property_meals_info_text__CZ913">Barbecue can be availed at an additional charge.</span>
+                                </div>
+                                <div class="PropetyMeals_property__meals_info_item__4hNBp">
+                                    <div class="PropetyMeals_property__meals_correct__dVJKf"></div><span class="PropetyMeals_property_meals_info_text__CZ913">Please inform us of your meal preference in advance and allow us a minimum 48 hrs notice prior to your check-in date.</span>
+                                </div>
+                                <div class="PropetyMeals_property__meals_info_item__4hNBp">
+                                    <div class="PropetyMeals_property__meals_correct__dVJKf"></div><span class="PropetyMeals_property_meals_info_text__CZ913">Guests do not have access to the villa kitchen.</span>
+                                </div>
+                                <div class="PropetyMeals_property__meals_info_item__4hNBp">
+                                    <div class="PropetyMeals_property__meals_correct__dVJKf"></div><span class="PropetyMeals_property_meals_info_text__CZ913">Guests can indulge in the local fare at nearby restaurants, however, please check the timings given the prevalent lockdown rules.</span>
+                                </div>
+                                <div class="PropetyMeals_property__meals_info_item__4hNBp">
+                                    <div class="PropetyMeals_property__meals_correct__dVJKf"></div><span class="PropetyMeals_property_meals_info_text__CZ913">The costs for the aforementioned food and beverage offerings and events are subject to an 18% GST charge.</span>
+                                </div>
+                                <div class="PropetyMeals_property__meals_info_item__4hNBp">
+                                    <div class="PropetyMeals_property__meals_correct__dVJKf"></div><span class="PropetyMeals_property_meals_info_text__CZ913">Service from delivery partners like Swiggy and Zomato is not available in Alibaug.</span>
+                                </div>
+                                <div class="PropetyMeals_property__meals_info_item__4hNBp">
+                                    <div class="PropetyMeals_property__meals_correct__dVJKf"></div><span class="PropetyMeals_property_meals_info_text__CZ913">Separate utensils, cutlery &amp; crockery will be used for preparation &amp; serving of Vegetarian &amp; Non-Vegetarian meals</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_divider__UEj20 css-jx2vta">
+                        <div id="location" class="PropertyLocation_property_location_root__c5jlR">
+                            <div class="ProeprtyTabTitle_property_tab__title_container__cq1TK">
+                                <div class="ProeprtyTabTitle_property_tab__title__UnVpY"><span class="ProeprtyTabTitle_property_title_divider__SbGzj"></span>
+                                    <h2>Villa Location</h2>
+                                </div>
+                            </div><span class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse PropertyLocation_property__location_Skeleton__sR6Bf css-z7erpk style-FSCIE" id="spinner"></span><iframe class="PropertyLocation_property_location_map__YVwd5" id="gmap_canvas" src="https://maps.google.com/maps?q=18.764812000,72.879541000&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed" scrolling="no"></iframe>
+                        </div>
+                        <div class="PropertyFreeText_property_freetext_container__Qk_Fr">
+                            <div class="PropertyFreeText_property__freetext_content_coolapse__8sPWg">
+                                <p><small>An ideal getaway from the city’s chaotic life, Alibaug shares its boundaries with the magnificent Arabian Sea. It is most commonly known for its sea forts, virgin beaches, black sand, mouthwatering seafood and a myriad of adventurous water sports. So, while you’re enjoying your peaceful stay at this property, here are a few nearby places and activities we recommend to make your stay even more memorable.<br> - Relive the history of Kolaba Fort.<br> - Take a calming walk at Alibaug Beach.<br> - Explore a mini detour to Vrindavan Farm.<br> - Embrace the splendour of Murud-Janjira Fort.<br> - Experience the beauty of nature in Kanakeshwar Forest.</small></p>
+                                <p><small><strong>Getting Around:</strong><br> - Distance from Chhatrapati Shivaji Maharaj International Airport - 108 km, 3 hours.&nbsp;<br> - Distance from Mandwa Jetty Port - 6 km, 10 minutes.<br> - Distance from Awas Bus Stand - 3 km.<br> - Distance from Awas Market - 2 km.</small></p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p></p>
+                            </div>
+                            <div class="PropertyFreeText_property__freetext_readMore__S9Qgt">Read More</div>
+                        </div>
+                        <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_divider__UEj20 css-jx2vta">
+                        <div class="PropertyExperiences_experiences__main__YD59F" id="experiences">
+                            <div>
+                                <div class="ProeprtyTabTitle_property_tab__title_container__cq1TK">
+                                    <div class="ProeprtyTabTitle_property_tab__title__UnVpY"><span class="ProeprtyTabTitle_property_title_divider__SbGzj"></span>
+                                        <h2>Experiences</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="PropertyExperiences_experiences__images___yJPK"><img src="https://stay-vista.cdn.prismic.io/stay-vista/8a2d0b9a-34bb-4663-b7a7-9fc5322785df_1.jpg?auto=compress,format" alt="exp-img-0" width="auto" height="auto" class="PropertyExperiences_experiences__image__ArTmR"><img src="https://stay-vista.cdn.prismic.io/stay-vista/71daf748-f00c-435f-91ce-60f8a0eadb8c_2.jpeg?auto=compress,format" alt="exp-img-1" width="auto" height="auto" class="PropertyExperiences_experiences__image__ArTmR"><img src="https://stay-vista.cdn.prismic.io/stay-vista/c801dc2e-dc0d-46c5-8915-bbfa2b6148a6_3_1.jpg?auto=compress,format" alt="exp-img-2" width="auto" height="auto" class="PropertyExperiences_experiences__image__ArTmR"></div>
+                            <div class="PropertyExperiences_experiences__description___Wuws">Whether you're seeking relaxation, adventure, or simply a break from the ordinary, StayVista's immersive experiences tailored meet your preferences. Have a private celebration or just enjoy a bonfire and karaoke night under the stars.</div>
+                            <div class="PropertyExperiences_experiences__button__WQwgz">
+                                <div class="PropertyExperiences_experiences__buttonArea__rle2U">View Experiences</div>
+                            </div>
+                        </div>
+                        <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_divider__UEj20 css-jx2vta">
+                        <hr class="MuiDivider-root MuiDivider-fullWidth PropertyTabHeader_property_mobile_tab_header_item_Vibe_divider__GNzmK css-jx2vta">
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-4 Property_property__detail_right__oOh7M css-1k0j8z3">
+                        <div class="PropertyDesktopBooking_property__desktop_booking_root__dThgh style-2ytte" id="style-2ytte">
+                            <div class="PropertyDesktopBooking_property__desktop_booking_wrapper__FQ_xS">
+                                <div class="PropertyDesktopBooking_property__desktop_booking_price_div__LZRpA">
+                                    <div class="PropertyDesktopBooking_property__desktop_booking_price_main__y6nZw">₹43,000<span class="PropertyDesktopBooking_property__desktop_booking_price_txt__blPf6">(for 6 rooms) Per Night + Taxes</span></div>
+                                </div>
+                                <div class="PropertyDesktopBooking_property__desktop_booking_field_wrapper__GzhMC"><span id="checkin_date" class="PropertyBookingDate_property__booking_date_root_1__c_PnT">Invalid date</span><span id="checkout_date" class="PropertyBookingDate_property__booking_date_root_1__c_PnT">Invalid date</span>
+                                    <div class="PropertyBookingDate_property__booking_date_root__8oNwa style-hpDPD" id="style-hpDPD">
+                                        <div class="PropertyBookingDate_property__booking_date_div__wdGet">
+                                            <div class="PropertyBookingDate_property__booking_date_text_div__SJXYg">
+                                                <p>Check-in</p><img src="https://stay-vista.cdn.prismic.io/stay-vista/ef1cc0a5-c9b3-4d29-82c8-00966842839e_Vector+1487.svg" alt="calender" class="PropertyBookingDate_property__booking_arrow__p_NBI style-UsZQi" id="style-UsZQi">
+                                            </div>
+                                            <div class="PropertyBookingDate_property__booking_date_text__FNL7f">
+                                                <div>Add Date</div>
+                                            </div>
+                                        </div>
+                                        <hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical PropertyBookingDate_property__booking_date_divider___iBPs css-1e4ed89">
+                                        <div class="PropertyBookingDate_property__booking_date_div2__OssDy">
+                                            <div class="PropertyBookingDate_property__booking_date_text_div__SJXYg">
+                                                <p>Check-out</p><img src="https://stay-vista.cdn.prismic.io/stay-vista/ef1cc0a5-c9b3-4d29-82c8-00966842839e_Vector+1487.svg" alt="calender" class="PropertyBookingDate_property__booking_arrow__p_NBI style-5LsCI" id="style-5LsCI">
+                                            </div>
+                                            <div class="PropertyBookingDate_property__booking_date_text__FNL7f">
+                                                <div>Add Date</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="PropertyDesktopBooking_property__desktop_booking_field_guest_wrapper__q8LRW">
+                                        <div class="PropertyCustomGuest_property__guest_root__SjNgf">
+                                            <div id="basic-button" aria-haspopup="true" class="PropertyCustomGuest_callBackForm__guest_root_non_field___fIwL style-1fM5p">
+                                                <div class="PropertyCustomGuest_callBackForm__guest_txt__lTFWb">
+                                                    <div class="PropertyCustomGuest_callBackForm__guest_txt_1__9OgHb">
+                                                        <p>Guests</p><img class="PropertyCustomGuest_property__booking_arrow__VH09N" src="https://stay-vista.cdn.prismic.io/stay-vista/ef1cc0a5-c9b3-4d29-82c8-00966842839e_Vector+1487.svg" alt="calender">
+                                                        <div id="style-fz8HQ" class="style-fz8HQ"></div>
+                                                    </div>
+                                                    <div class="PropertyCustomGuest_callBackForm__guest_txt_2__M4MQD">2 Adults, 0 Child, 0 Infant </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-0 style-pLZ6X" id="menu-0">
+                                            <div id="number-of-rooms-0" aria-haspopup="true" class="CityPageNumberOfRooms_property_page_room_root_non_field__kjOLf style-JPtVA">
+                                                <div class="CityPageNumberOfRooms_property_page_room_root_non_field_sub___XgmH">
+                                                    <div class="CityPageNumberOfRooms_property_page_room_root_non_field_inner___l_Fw">
+                                                        <p class="CityPageNumberOfRooms_property_page_room_no_room_text___wE2l">No. of Rooms</p><img class="CityPageNumberOfRooms_property_room_booking_arrow__bAI30 style-jaCsE" src="https://stay-vista.cdn.prismic.io/stay-vista/ef1cc0a5-c9b3-4d29-82c8-00966842839e_Vector+1487.svg" alt="calender" id="style-jaCsE">
+                                                    </div>
+                                                    <div class="CityPageNumberOfRooms_property_page_room_value____lsy">6 Rooms</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="PropertyDesktopBooking_property__desktop_bookingWidget_dateInfo__jrjl0">Select dates for best price</div>
+                            <div class="PropertyDesktopBooking_property__desktop_booking_Button__VcF89"><span>Check Availability</span></div>
+                            <hr class="MuiDivider-root MuiDivider-fullWidth css-jx2vta">
+                            <div class="PropertyDesktopBooking_property__desktop_cancallation_root__z3CDw">
+                                <div class="PropertyDesktopBooking_property__desktop_revers_image__3pRit"><img src="https://stay-vista.cdn.prismic.io/stay-vista/6da6746f-c2c9-4187-82cf-43c55b7acc91_Vector.png?auto=compress,format" alt="reverse" id="style-QSQhk" class="style-QSQhk"></div>
+                                <div class="PropertyDesktopBooking_property__desktop_cancallation_txt__wUh41"><span class="PropertyDesktopBooking_property__desktop_cancallation_bold_txt__3o_fr">For Booking &amp; Cancellation Policy details</span><span class="PropertyDesktopBooking_property__desktop_cancallation_bold_txt_tnc__0ZTfl">Click here</span></div>
+                            </div>
+                            <div class="PropertyBookingHelp_property__bookingHelp__9spo5">
+                                <div class="PropertyBookingHelp_property__connectWithHost__I4Bzc"><img src="https://stay-vista.cdn.prismic.io/stay-vista/1acf253e-1bfc-42a9-b80f-4bbe912374cc_Call.svg" alt="Stay Vista" id="style-xQ1Hw" class="style-xQ1Hw"><span>Connect with Host</span></div>
+                                <div class="PropertyBookingHelp_property__requestCallback__lBMF2"><span>Request Call Back</span></div>
+                            </div>
+                            <hr class="MuiDivider-root MuiDivider-fullWidth PropertyBookingHelp_property_divider__Wywo_ css-jx2vta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="Footer_c-footer__cIS2P">
+            <div class="Footer_c-footer__innerWrapper__PiTBO">
+                <div class="Footer_c-footer__nav__rr4XK">
+                    <section class="Footer_c-footer__navSection__RHhm1">
+                        <h2 class="Footer_c-footer__navSectionTitle__qKnim">Top Locations<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                            </svg></h2>
+                        <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-nTBbe" id="style-nTBbe">
+                            <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-lonavala">Lonavala</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/goa/villas-in-goa">Goa</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-alibaug">Alibaug</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-karjat">Karjat</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-igatpuri">Igatpuri</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-mahabaleshwar">Mahabaleshwar</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-mumbai">Mumbai</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/himachal-pradesh/villas-in-kasauli">Kasauli</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/uttarakhand/villas-in-mussoorie">Mussoorie</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/tamil-nadu/villas-in-ooty">Ooty</a><span class="Footer_c-footer__navSectionLink__statusToggler__JDCP6"><span>+ 5 more</span></span></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Footer_c-footer__navSection__RHhm1">
+                        <h2 class="Footer_c-footer__navSectionTitle__qKnim">Top Collections<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                            </svg></h2>
+                        <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-1D9WI" id="style-1D9WI">
+                            <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/luxury-villas">Luxury Villas</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/dynamic-collection">Trending This Season</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/festive-favourites">Festive Favourites Villas</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/heated-pool-collection">Heated-Pool Collection</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/pet-friendly-villas">Pet-Friendly Villas</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/impeccable-view-villas">Impeccable View Villas</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/corporate-offsite-villas">Corporate Offiste Villas</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/kid-friendly-villas">Kid-Friendly Villas</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/getaway-collection">Getaway Collections</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/collections/handpicked-villas">Handpicked Villas</a><span class="Footer_c-footer__navSectionLink__statusToggler__JDCP6"><span>+ 3 more</span></span></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Footer_c-footer__navSection__RHhm1">
+                        <h2 class="Footer_c-footer__navSectionTitle__qKnim">About<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                            </svg></h2>
+                        <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-Me5ki" id="style-Me5ki">
+                            <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/our-story">Our Story</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/partner-with-us">Partner With Us</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/offers">Offers</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/corporate-offsites">Corporate Offsites</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/events-and-experiences">Events &amp; Experiences</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/faq">FAQs</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/gift-card">Gift Card</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/blog/home">Blog</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/careers">Careers</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/covid">Covid Policy</a><span class="Footer_c-footer__navSectionLink__statusToggler__JDCP6"><span>+ 2 more</span></span></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Footer_c-footer__navSection__RHhm1">
+                        <h2 class="Footer_c-footer__navSectionTitle__qKnim">Support<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                            </svg></h2>
+                        <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-9gVo6" id="style-9gVo6">
+                            <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/contact-us">Contact Us</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/cancellation-policy">Cancellation &amp; Refund Policy</a></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <hr class="Footer_c-footer_hr__L5T0U">
+                <p class="Footer_c-footer_bottomHeadingText__BsvH1">Popular Destinations to Rent a Holiday Home in India</p>
+                <div class="Footer_c-footer__nav__rr4XK">
+                    <section class="Footer_c-footer__navSection__RHhm1">
+                        <h2 class="Footer_c-footer__navSectionTitle__qKnim">Villas+<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                            </svg></h2>
+                        <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-kaDDW" id="style-kaDDW">
+                            <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/goa/villas-in-goa">Villas in Goa</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-lonavala">Villas in Lonavala</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-alibaug">Villas in Alibaug</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-karjat">Villas in Karjat</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-igatpuri">Villas in Igatpuri</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-mahabaleshwar">Villas in Mahabaleshwar</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-mumbai">Villas in Mumbai</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/karnataka/villas-in-bangalore">Villas in Bangalore</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/rajasthan/villas-in-udaipur">Villas in Udaipur</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/maharashtra/villas-in-nashik">Villas in Nashik</a><span class="Footer_c-footer__navSectionLink__statusToggler__JDCP6"><span>+ 32 more</span></span></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Footer_c-footer__navSection__RHhm1">
+                        <div>
+                            <h2 class="Footer_c-footer__navSectionTitle__qKnim">Bungalows+<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                    <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                                </svg></h2>
+                            <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-OnonG" id="style-OnonG">
+                                <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                    <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/west-bengal/villas-in-kolkata">Bungalows in Kolkata</a></div>
+                                </div>
+                            </div>
+                            <hr class="Footer_c-footer_hr_separator__DrXa9">
+                        </div>
+                        <div>
+                            <h2 class="Footer_c-footer__navSectionTitle__qKnim">Cottages+<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                    <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                                </svg></h2>
+                            <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-7vJUS" id="style-7vJUS">
+                                <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                    <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/punjab/cottages-in-chandigarh">Cottages in Chandigarh</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/himachal-pradesh/cottages-in-naldehra">Cottages in Naldehra</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/goa/cottages-in-arambol">Cottages in Arambol</a></div>
+                                </div>
+                            </div>
+                            <hr class="Footer_c-footer_hr_separator__DrXa9">
+                        </div>
+                    </section>
+                    <section class="Footer_c-footer__navSection__RHhm1">
+                        <h2 class="Footer_c-footer__navSectionTitle__qKnim">Homestays+<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                            </svg></h2>
+                        <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-ojYrl" id="style-ojYrl">
+                            <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/himachal-pradesh/villas-in-kasauli">Homestays in Kasauli</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/uttarakhand/villas-in-mussoorie">Homestays in Mussoorie</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/tamil-nadu/villas-in-ooty">Homestays in Ooty</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/himachal-pradesh/villas-in-manali">Homestays in Manali</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/uttarakhand/villas-in-nainital">Homestays in Nainital</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/kerala/villas-in-wayanad">Homestays in Wayanad</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/tamil-nadu/villas-in-kodaikanal">Homestays in Kodaikanal</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/uttarakhand/villas-in-jim-corbett">Homestays in Jim Corbett</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/pondicherry/villas-in-pondicherry">Homestays in Pondicherry</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/karnataka/villas-in-coorg">Homestays in Coorg</a><span class="Footer_c-footer__navSectionLink__statusToggler__JDCP6"><span>+ 43 more</span></span></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Footer_c-footer__navSection__RHhm1">
+                        <div>
+                            <h2 class="Footer_c-footer__navSectionTitle__qKnim">Places To Visit+<svg class="Footer_c-footer__navSectionArrowRotate__CYGIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.95 6.92">
+                                    <path fill="#fff" d="M0,.94,1,0,6,5l5-5,1,.94-6,6Z"></path>
+                                </svg></h2>
+                            <div class="MuiCollapse-root MuiCollapse-vertical Footer_c-footer__navSectionLinks_div___AhgW MuiCollapse-entered css-c4sutr style-H1roR" id="style-H1roR">
+                                <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+                                    <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb"><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/places-to-visit-in-alibaug">Places To Visit in Alibaug</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/places-to-visit-in-mussoorie">Places To Visit in Mussoorie</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/places-to-visit-in-coorg">Places To Visit in Coorg</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/places-to-visit-in-kasauli">Places To Visit in Kasauli</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/places-to-visit-in-karjat">Places To Visit in Karjat</a><a target="_blank" class="Footer_c-footer__navSectionLink__x67My" href="https://www.stayvista.com/places-to-visit-in-goa">Places To Visit in Goa</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <hr class="Footer_c-footer_hr__L5T0U">
+                <div>
+                    <p class="Footer_c-footer_bottomHeadingText__BsvH1">Popular Searches</p>
+                    <div class="Footer_c-footer__popularLinkContainer__Ylmbf">
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/maharashtra/villas-in-lonavala"><span>villas in lonavala</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/karnataka/villas-in-coorg"><span>homestays in coorg</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/tamil-nadu/villas-in-ooty"><span>stay in ooty</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/maharashtra/villas-in-karjat"><span>karjat villas</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/"><span>stay in gokarna</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/goa/villas-in-goa"><span>villas in goa</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/pondicherry/villas-in-pondicherry"><span>stay in pondicherry</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/kerala/villas-in-munnar"><span>stay in munnar</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/maharashtra/villas-in-igatpuri"><span>igatpuri villas</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/maharashtra/villas-in-alibaug"><span>villas in alibaug</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/karnataka/villas-in-chikmagalur"><span>chikmagalur stay</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/kerala/villas-in-wayanad"><span>stay in wayanad</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/karnataka/villas-in-bangalore"><span>villas in bangalore</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/uttarakhand/villas-in-rishikesh"><span>stay in rishikesh</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/maharashtra/villas-in-mahabaleshwar"><span>stay in mahabaleshwar</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/karnataka/villas-in-mysore"><span>homestays in mysore</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/tamil-nadu/villas-in-kodaikanal"><span>homestays in kodaikanal</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/maharashtra/villas-in-matheran"><span>stay in matheran</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/himachal-pradesh/villas-in-manali"><span>homestays in manali</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/kerala/villas-in-kochi"><span>homestays in kochi</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/uttarakhand/villas-in-nainital"><span>homestays in nainital</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/karnataka/villas-in-mangalore"><span>homestays in mangalore</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/punjab/villas-in-chandigarh"><span>cottages chandigarh</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/rajasthan/villas-in-jaipur"><span>villas in jaipur</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h">|</span></div>
+                        <div><a target="_blank" class="Footer_c-footer__popularLink__swxQx" href="/himachal-pradesh/villas-in-kasauli"><span>homestays in kasauli</span></a><span class="Footer_c-footer__popularLinkSeperate__bMC5h"></span></div>
+                    </div>
+                </div>
+                <hr class="Footer_c-footer_hr__L5T0U">
+                <div class="Footer_c-footer__legalAndSocial__sxlKH">
+                    <div class="Footer_c-footer__legal__bWO1R"><a class="Footer_c-footer__legalLink__YbSkM" target="_blank" href="/privacy-policy">Privacy</a><span class="Footer_c-footer__legalSeperator__Ar0pC"></span><a class="Footer_c-footer__legalLink__YbSkM" target="_blank" href="/terms-and-conditions">Terms &amp; Conditions</a><span class="Footer_c-footer__legalSeperator__Ar0pC"></span><a class="Footer_c-footer__legalLink__YbSkM" target="_blank" href="/sitemap">Sitemap</a><span class="Footer_c-footer__legalSeperator__Ar0pC"></span>
+                        <p class="Footer_c-call_us__1XzN6"><span> Call Us: </span><span class="Footer_c-call_us_number__jjyqP" target="_blank">+91 8104 954 254</span></p>
+                    </div>
+                    <div class="Footer_c-footer__socialMedia__Wiwo9"><a class="Footer_c-footer__socialMediaLink__ReHoK" target="_blank" href="https://www.facebook.com/stayvista"><img class="Footer_c-footer__socialMediaIcon__H15D3 style-DaOxW" src="https://stay-vista.cdn.prismic.io/stay-vista/bd09ba70-6152-4e85-b765-f8a161def200_Group.svg" alt="facebook" id="style-DaOxW"></a><a class="Footer_c-footer__socialMediaLink__ReHoK" target="_blank" href="https://www.instagram.com/stayvista_official/"><img class="Footer_c-footer__socialMediaIcon__H15D3 style-T8acs" src="https://stay-vista.cdn.prismic.io/stay-vista/8250e24b-80bc-4cef-9bdf-c2952617bd05_span.svg" alt="instagram" id="style-T8acs"></a><a class="Footer_c-footer__socialMediaLink__ReHoK" target="_blank" href="https://www.youtube.com/@stayvista"><img class="Footer_c-footer__socialMediaIcon__H15D3 style-Q1VTm" src="https://stay-vista.cdn.prismic.io/stay-vista/d625f8c6-bd8c-4884-82cc-2ed0a602e2ab_span+%282%29.svg" alt="youtube" id="style-Q1VTm"></a></div>
+                </div>
+            </div>
+        </footer>
+    </main>
 
 
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    
 
-    <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
