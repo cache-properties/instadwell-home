@@ -2520,6 +2520,10 @@ html.PropertyDesktopBooking_is-touch-device__z1QBM.PropertyDesktopBooking_tablet
     border-radius: 5px 5px 5px 5px
 }
 
+p{
+    margin-bottom: -1rem;
+}
+
 .PropertyDesktopBooking_property__desktop_booking_Button__VcF89 {
     background: linear-gradient(90deg,#1e1e1e,#373536 50%,#1e1e1e);
     display: flex;
