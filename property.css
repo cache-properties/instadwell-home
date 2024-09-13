@@ -9175,7 +9175,6 @@ html.PropertyTitle_is-touch-device__mgCF0.PropertyTitle_tablet__SVUTB {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 32px
 }
 
 
@@ -9187,7 +9186,7 @@ html.PropertyTitle_is-touch-device__mgCF0.PropertyTitle_tablet__SVUTB {
 
     #overview{
         padding-left: 20px;
-        padding-bottom: 15px;
+    
     }
 }
 
@@ -27322,23 +27321,17 @@ html.PropertyUsp_is-touch-device__XJWV2.PropertyUsp_tablet__H_bIx {
     background: linear-gradient(315.48deg,rgba(156,205,251,.2) -4.38%,hsla(31,95%,78%,.2) 107.18%);
     border-radius: 4px;
     padding: 14px;
-    margin: 40px 0;
+    margin-bottom: 40px;
     cursor: pointer
 }
 
 @media only screen and (max-width: 1023px) {
     .PropertyUsp_property__usp_div__KhegO {
-        margin:40px 20px 0
+       margin-left: 15px;
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .PropertyUsp_property__usp_div__KhegO {
-        background:linear-gradient(315.48deg,rgba(156,205,251,.2) -4.38%,hsla(31,95%,78%,.2) 107.18%);
-        margin-top: 24px;
-        border: none
-    }
-}
+
 
 .PropertyUsp_property__usp_div_wrapper__0tVjm {
     display: flex;
@@ -27354,7 +27347,8 @@ html.PropertyUsp_is-touch-device__XJWV2.PropertyUsp_tablet__H_bIx {
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px
+    line-height: 24px;
+    margin-top: 1rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -30367,3 +30361,179 @@ html.CityPageFaq_is-touch-device__1SRDS.CityPageFaq_tablet__BOUcx {
         overflow-y: auto;
     }
 }
+
+/* book now button  */
+.PropertyBookNow_property__bookNow__VTt5B {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.PropertyBookNow_property__bookNow_Details__uG5nu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 30px 0;
+    flex-grow: 1;
+}
+.PropertyBookNow_property__bookNow_DetailsLeft__IXkPG {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+.PropertyBookNow_property__bookNow_No_Dates__G3njb {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -.02em;
+    margin-bottom: 9px;
+    display: flex;
+    text-decoration: underline;
+}
+.PropertyBookNow_property__bookNow_Guests__UU7Jk {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -.02em;
+    text-underline-offset: 2px;
+    color: #959595;
+    display: flex;
+    flex: 1 1;
+}
+.PropertyBookNow_property__bookNow_DetailsRight__bIqL0 {
+    display: flex;
+    flex-direction: column;
+    width: -moz-max-content;
+    width: max-content;
+}
+.PropertyBookNow_property__bookNow_DetailsRightBottom__Nrl9H {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.PropertyBookNow_property__bookNow_newPrice__p7AlZ {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.05em;
+    display: flex;
+    align-items: flex-end;
+}
+.PropertyBookNow_property__bookNow_rooms__FZ1vP {
+    color: #959595;
+    font-family: Inter;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: .25rem;
+}
+.PropertyBookNow_property__bookNow_Button__lhsEl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+.PropertyDesktopBooking_property__desktop_booking_Button__VcF89 {
+    background: linear-gradient(90deg, #1e1e1e, #373536 50%, #1e1e1e);
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 12px 0;
+    overflow: hidden;
+}
+.PropertyDesktopBooking_property__desktop_booking_Button__VcF89>span {
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    margin: 20px 0;
+    white-space: nowrap;
+}
+
+@media (min-width:1023px){
+    .PropertyBookNow_property__bookNow__VTt5B{
+        display: none;
+    }
+}
+    
+/* @media (max-width: 767px) {
+    .PropertyBookNow_property__bookNow_Details__uG5nu {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        margin: 12px 8px 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .PropertyBookNow_property__bookNow_rooms__FZ1vP {
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        color: #222;
+        margin-top: 0;
+    }
+}
+@media (max-width: 767px) {
+    .PropertyBookNow_property__bookNow_DetailsLeft__IXkPG {
+        flex-direction: row;
+        padding-top: 2px;
+    }
+}
+@media (max-width: 767px) {
+    .PropertyBookNow_property__bookNow_Guests__UU7Jk {
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 14px;
+        text-align: left;
+        color: #222;
+    }
+}
+@media (max-width: 767px) {
+    .PropertyBookNow_property__bookNow_newPrice__p7AlZ {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+    }
+}
+@media (max-width: 767px) {
+    .PropertyBookNow_property__bookNow_Button__lhsEl {
+        margin: 0 20px 0 8px;
+    }
+}
+@media (max-width: 767px) {
+    .PropertyDesktopBooking_property__desktop_booking_Button__VcF89 {
+        width: 100%;
+        height: 52px;
+        padding: 16px 24px;
+        gap: 10px;
+        border-radius: 200px;
+        opacity: 1;
+    }
+}
+@media (max-width: 767px) {
+    .PropertyDesktopBooking_property__desktop_booking_Button__VcF89>span {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+    }
+} */
