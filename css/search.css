@@ -23,6 +23,7 @@
     top: 0;
 }
 
+
 /* Ensure each property card is appropriately sized */
 .property-card {
     margin-bottom: 10px;
@@ -69,3 +70,26 @@
     width: 100%;
     border: 1px solid #ccc;
 }
+
+
+/* FILTER BUTTON */
+@media (max-width: 768px) {
+    .modal-dialog {
+      position: fixed;
+      bottom: 0;
+      margin: 0;
+      width: 100%;
+      max-width: none;
+      height: 70%; /* Adjust as needed */
+    }
+  
+    .modal-content {
+      height: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+  
+    .modal-body {
+      overflow-y: auto;
+    }
+  }
+  

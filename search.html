@@ -69,7 +69,7 @@
                             </ul>
                         </nav>
                         <div class="header__nav__widget">
-                            <a href="#">Explore <span class="arrow_right"></span></a>
+                          <button class="btn btn-dark" type="button">Search</button>
                         </div>
                     </div>
                 </div>
@@ -85,19 +85,105 @@
 
 <div class="container-fluid">
     <div class="row">
+      
         <!-- Property Listings Column -->
         <div class="col-lg-4 col-md-5 col-sm-12 properties-column">
+          <h3 class="mb-4">Rooms for rent near Barcelona</h3>
+
+          <!-- Search Bar -->
+          <div class="search-bar">
+             <input type="text" class="search-input" placeholder="🔍 Search cities neighborhoods" id="property-search" onkeyup="searchProperties()">
+         </div>
+         
+         <!-- Price Filter -->
+
+
+
+<!-- Filter Button -->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#filterModal">
+Filter Rooms
+</button><hr>
             
              <!-- Page Title -->
-             <h3 class="mb-4">Rooms for rent near Barcelona</h3>
-
-             <!-- Search Bar -->
-             <div class="search-bar">
-                <input type="text" class="search-input" placeholder="🔍 Search cities neighborhoods" id="property-search" onkeyup="searchProperties()">
-            </div>
             
-            <!-- Price Filter -->
-<div class="price-filter mb-4">
+
+<!-- MODALS -->
+ <!-- Filter Modal -->
+<div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="filterModalLabel">Filter Options</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Filter Options Form -->
+        <form>
+          <!-- Price Range Filter -->
+          <div class="mb-3">
+            <label for="priceRange" class="form-label">Price Range</label>
+            <input type="range" class="form-range" id="priceRange" min="100" max="1000" step="50">
+          </div>
+
+          <!-- Room Type Filter -->
+          <div class="mb-3">
+            <label class="form-label">Room Type</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="singleRoom" value="single">
+              <label class="form-check-label" for="singleRoom">Single Room</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="doubleRoom" value="double">
+              <label class="form-check-label" for="doubleRoom">Double Room</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="suiteRoom" value="suite">
+              <label class="form-check-label" for="suiteRoom">Suite</label>
+            </div>
+          </div>
+
+          <!-- Location Filter -->
+          <div class="mb-3">
+            <label for="locationSelect" class="form-label">Location</label>
+            <select class="form-select" id="locationSelect">
+              <option selected>Select Location</option>
+              <option value="cityCenter">City Center</option>
+              <option value="suburbs">Suburbs</option>
+              <option value="nearAirport">Near Airport</option>
+            </select>
+          </div>
+
+          <!-- Amenities Filter -->
+          <div class="mb-3">
+            <label class="form-label">Amenities</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="wifi" value="wifi">
+              <label class="form-check-label" for="wifi">Wi-Fi</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="parking" value="parking">
+              <label class="form-check-label" for="parking">Parking</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="ac" value="ac">
+              <label class="form-check-label" for="ac">Air Conditioning</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary">Apply Filters</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="price-filter mb-4">
     <label for="price-range" class="form-label">Filter by Price</label>
     <input type="range" class="form-range" min="0" max="1000" step="200" id="price-range" value="270" oninput="updatePriceLabel()" />
     <div class="d-flex justify-content-between">
@@ -105,149 +191,246 @@
         <span id="price-label">£270</span>
         <span>£1000</span>
     </div>
-</div>
+</div> -->
 
             <!-- Property Cards with Pagination -->
                  <div id="page-1" class="property-page active-page">
                 <!-- 10 Property Cards for Page 1 -->
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
-                            <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/iqs.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ Sterling Court, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £286/ week</p>
-                        <div class="d-flex justify-content-between">
-                            <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 8.8 Mi</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/nmh.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">New Malden Hall, London</h5>
-                        <p class="text-muted">New Malden, England, GB</p>
-                        <p class="fw-bold">From £255/ week</p>
-                        <div class="d-flex justify-content-between">
-                            <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 10.2 Mi</span>
-                        </div>
-                    </div>
-                </div>
-                    <div class="card property-card">
-                        <img src="./img/accomodations/lnl.avif" class="card-img-top" alt="Property 1">
+                <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/bedrooms/bed1.webp" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">London Nest Lady Margaret, London</h5>
-                            <p class="text-muted">London, England, GB</p>
-                            <p class="fw-bold">From £288/ week</p>
-                            <div class="d-flex justify-content-between">
-                                <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 3.5 Mi</span>
-                            </div>
+                          <h5 class="card-title">Brighton Residence, Boston</h5>
+                          <p class="text-muted">Washington St, Boston, 02135</p>
+                          <p class="fw-bold">From $345/ week</p>
+                          <div class="d-flex justify-content-between">
+                            <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 5.2 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
+                  </div>
+                  
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/bedrooms/22.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">New Malden Hall, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £255/ week</p>
+                          <div class="d-flex justify-content-between">
+                            <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 10.1 Mi</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
                             <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
                             <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
                             <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
                             <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
                             <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
                             <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
                             <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
+                            <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
+                            <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 
                 <!-- Add 9 more property cards similar to the one above for this page -->
             </div>
 
             <div id="page-2" class="property-page">
                 <!-- 10 Property Cards for Page 2 -->
-                <div class="card property-card">
-                    <img src="./img/accomodations/iq.avif" class="card-img-top" alt="Property 11">
-                    <div class="card-body">
-                        <h5 class="card-title">iQ The Arcade, London</h5>
-                        <p class="text-muted">London, England, GB</p>
-                        <p class="fw-bold">From £270/ week</p>
-                        <div class="d-flex justify-content-between">
+                <div class="card property-card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <!-- Image on the left -->
+                      <div class="col-md-4">
+                        <img src="./img/accomodations/iq.avif" class="img-fluid rounded-start" alt="Property 1">
+                      </div>
+                      <!-- Content on the right -->
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">iQ The Arcade, London</h5>
+                          <p class="text-muted">London, England, GB</p>
+                          <p class="fw-bold">From £270/ week</p>
+                          <div class="d-flex justify-content-between">
                             <span class="location-badge"><i class="bi bi-geo-alt"></i> City Center | 4.0 Mi</span>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
                 <!-- Add 9 more property cards similar to the one above for this page -->
             </div>
 
@@ -268,8 +451,14 @@
         
         <!-- Map Column -->
         <div class="col-lg-8 col-md-7 col-sm-12">
-            <div id="map" class="map-container"></div>
-        </div>
+          <div id="map" class="map-container" style="height: 100vh; width: 100%; position: relative;">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2948.7669008876264!2d-71.1505119098621!3d42.347492861631515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDIwJzUxLjAiTiA3McKwMDgnNDQuMyJX!5e0!3m2!1sen!2sin!4v1726206466603!5m2!1sen!2sin" 
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+      </div>
+      
     </div>
 </div>
 

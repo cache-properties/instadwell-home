@@ -27,21 +27,10 @@ function prevPage() {
 }
 
 // Initialize the map
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 51.5074, lng: -0.1278}, // Default to London, UK
-        zoom: 10
-    });
 
-    // Example of adding a marker for a property
-    var marker = new google.maps.Marker({
-        position: {lat: 51.5074, lng: -0.1278}, // Example coordinates
-        map: map,
-        title: 'iQ The Arcade, London'
-    });
 
     // Add more markers for other properties as needed
-}
+
 
 // Function to search properties
 function searchProperties() {
