@@ -10022,9 +10022,14 @@ body,html {
     border: none
 }
 
-a,a:active,a:focus,a:hover,a:visited {
+a,a:visited {
     text-decoration: none !important;
-    color: black;
+    color: black !important ;
+    
+}
+a:active,a:focus,a:hover {
+    text-decoration: none !important;
+    color: blue !important ;
     
 }
 
